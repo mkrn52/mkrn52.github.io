@@ -8,12 +8,12 @@
 }
 .name{
     padding-top: 20%;
-    padding-left: 30%;
+    padding-left: 15%;
     font-size: 50px;
     background-color: transparent;
     color: whitesmoke;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    animation: 7s anim-name ease-out 1;
+    animation: 4s anim-name ease-out 1;
 }
   @keyframes anim-name {
     0% {
