@@ -41,7 +41,13 @@
     border-radius: 50%;
     height: 500px;
     background-size: cover;
-    box-shadow: 5px;
+    box-shadow: -15px -15px 50px 2px #000 inset,  -15px -5px 40px 0.25px rgb(170, 170, 240) ;
     background-image: url("images/earth.jpeg");
+    animation: 20s anim-spin linear alternate infinite;
 }
-  
+@keyframes anim-spin {
+
+    100%{
+        background-position: 80%;
+    }
+}
