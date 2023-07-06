@@ -5,11 +5,11 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(22, 23, 38);
+    background-image: linear-gradient(rgb(22, 23, 38), rgb(195, 191, 191));
 }
 .name{
-    padding-top: 20%;
+    margin-left: 10%;
+    padding-top: 15%;
     font-size: 80px;
     background-color: transparent;
     color: rgb(195, 191, 191);
@@ -33,7 +33,11 @@
       transform: translateY(0%);
     }
   }
+.specialWords{
+    font-size: 150px;
+    color: rgb(119, 50, 50);
 
+}
 
 /* Nav Style */
 .nav{
