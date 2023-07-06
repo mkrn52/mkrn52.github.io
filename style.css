@@ -34,40 +34,6 @@
     }
   }
 
-.earth{
-    width: 500px;
-    margin-top: 10%;
-    border-radius: 50%;
-    height: 500px;
-    background-size: cover;
-    box-shadow: -15px -15px 50px 2px #000 inset,  0 0 60px 0.5px rgb(170, 170, 240) ;
-    background-image: url("images/earth.jpeg");
-    animation: 4s anim-earth ease-out 1, 20s anim-spin linear alternate infinite;
-}
-@keyframes anim-earth {
-    0% {
-      opacity: 0;
-      transform: translateX(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.35;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-
-@keyframes anim-spin {
-
-    100%{
-        background-position: 80%;
-    }
-}
 
 /* Nav Style */
 .nav{
