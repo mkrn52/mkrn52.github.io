@@ -81,7 +81,7 @@ nav.active .nav-links li:hover a{
 .toggle{
     position: absolute;
     top: 1.5rem;
-    right: 5%;
+    margin-left: 30%;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -98,10 +98,22 @@ nav.active .nav-links li:hover a{
 .toggle:hover{
     cursor: pointer;
 }
+@media (max-width:1170px) {
+    .nav{
+            margin-left: 26%;
+        }
+}
+@media (max-width:1070px) {
+    .nav{
+            margin-left: 24%;
+        }
+}
+
 
 @media (max-width:950px) {
     .toggle{
         display: flex;
+        margin-left: 90%;
     }
     .nav-links{
         background-color: black;
@@ -112,6 +124,7 @@ nav.active .nav-links li:hover a{
     .nav{
         flex-direction: column;
         width: 100%;
+        margin: 0%;
     }
     .nav-links ul{
         flex-direction: column;
@@ -138,7 +151,9 @@ nav.active .nav-links li:hover a{
         margin: 0;
     }
     .nav-links.active{
+        padding-left: 0%;
         text-align: center;
+        width: 100%;
         display: flex;
     }
     .nav.active{
