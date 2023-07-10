@@ -1,12 +1,19 @@
 const navbar = document.querySelector('nav');
 const name_var = document.getElementsByClassName('name')[0];
+const about_div = document.getElementsByClassName('aboutTextDiv')[0];
+const img_div = document.getElementsByClassName('myImg')[0];
+
 
 window.onscroll = () => {
     if (window.scrollY > 350) {
         name_var.classList.add('active');
+        img_div.classList.add('active');
+        about_div.classList.add('active');
         //navbar.classList.add('active');
     } else {
         name_var.classList.remove('active');
+        img_div.classList.remove('active');
+        about_div.classList.remove('active');
         //navbar.classList.remove('active');
     }
 };
