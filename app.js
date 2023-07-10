@@ -1,8 +1,12 @@
 const navbar = document.querySelector('nav');
+const name_var = document.getElementsByClassName('name')[0];
+
 window.onscroll = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 350) {
+        name_var.classList.add('active');
         //navbar.classList.add('active');
     } else {
+        name_var.classList.remove('active');
         //navbar.classList.remove('active');
     }
 };

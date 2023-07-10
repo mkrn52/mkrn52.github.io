@@ -180,9 +180,9 @@ nav.active .nav-links li:hover a{
     background-color: transparent;
     color: rgb(195, 191, 191);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    animation: 4s anim-name ease-out 1;
+    animation: 3s anim-name-in ease-out 1;
 }
-  @keyframes anim-name {
+  @keyframes anim-name-in {
     0% {
       opacity: 0;
       transform: translateX(80%);
@@ -197,6 +197,25 @@ nav.active .nav-links li:hover a{
     100% {
       opacity: 1;
       transform: translateY(0%);
+    }
+  }
+.name.active{
+    animation: 2s anim-name-out ease-out 1;
+    opacity: 0;
+}
+@keyframes anim-name-out {
+    0% {
+      opacity: 100;
+    }
+    20% {
+      opacity: 80;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(80%);
     }
   }
 .specialWords{
