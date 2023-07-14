@@ -21,9 +21,12 @@ window.onscroll = () => {
         }
         if(window.scrollY > 710){
             nav_links.classList.add("active");
-            if(window.scrollY > 1040){
+            if(window.scrollY > 1180){
                 img_div.classList.remove('active');
-                about_div.classList.remove('active');        
+                about_div.classList.remove('active');   
+                if(window.scrollY > 1470){
+                    nav_links.classList.remove("active");
+                }     
             }else{
                 img_div.classList.add('active');
                 about_div.classList.add('active');            
