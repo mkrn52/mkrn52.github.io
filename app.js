@@ -7,22 +7,28 @@ const nav_links = document.getElementsByClassName('nav-links')[0];
 
 
 window.onscroll = () => {
-    if (window.scrollY > 350) {
+    if(window.scrollY > 350 && window.scrollY < 710 ){
         name_var.classList.add('active');
         img_div.classList.add('active');
-        about_div.classList.add('active');
+        about_div.classList.add('active');    
+        nav_links.classList.remove("active");
+    }else{
+        if(window.scrollY < 350){
+            name_var.classList.remove('active');
+            img_div.classList.remove('active');
+            about_div.classList.remove('active');   
+            nav_links.classList.remove("active"); 
+        }
         if(window.scrollY > 710){
             nav_links.classList.add("active");
-            
-        }else{
-            nav_links.classList.remove("active");
-        }
-        //navbar.classList.add('active');
-    } else {
-        name_var.classList.remove('active');
-        img_div.classList.remove('active');
-        about_div.classList.remove('active');
-        //navbar.classList.remove('active');
+            if(window.scrollY > 1040){
+                img_div.classList.remove('active');
+                about_div.classList.remove('active');        
+            }else{
+                img_div.classList.add('active');
+                about_div.classList.add('active');            
+            }
+      }
     }
 };
 
