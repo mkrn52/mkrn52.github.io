@@ -72,6 +72,14 @@ p1btnOpen.addEventListener('click',() => {
 
 //Functions for project images
 
+var images =  document.querySelectorAll('.slider img');
+var dots = document.querySelectorAll('.dot');
+var currentImage = 0;
+const interval = 3000;
 function slideSwitch(n){
-    
+    for (let index = 0; index < images.length; index++) {
+        images[index].style.opacity = 0;
+        dots[index].className = dots[index].className.replace(' Dotactive', '');        
+    }
+
 }

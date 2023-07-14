@@ -424,8 +424,13 @@ nav.active .nav-links li:hover a{
     border-radius: 50%;
     display: inline-block;  
 }
-.switchDot:hover{
+.dotActive, .switchDot:hover{
     background-color: rgb(119, 50, 50);
-
-
 }
+.slider img:first-child {
+    z-index: 1;
+  }
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+  
