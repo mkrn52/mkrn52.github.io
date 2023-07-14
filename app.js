@@ -13,6 +13,7 @@ window.onscroll = () => {
         about_div.classList.add('active');
         if(window.scrollY > 710){
             nav_links.classList.add("active");
+            
         }else{
             nav_links.classList.remove("active");
         }

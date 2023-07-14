@@ -199,6 +199,7 @@ nav.active .nav-links li:hover a{
     color: rgb(195, 191, 191);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 3s anim-name-in ease-out 1;
+    animation-delay: 0s;
 }
   @keyframes anim-name-in {
     0% {
@@ -219,6 +220,7 @@ nav.active .nav-links li:hover a{
   }
 .name.active{
     animation: 2s anim-name-out ease-out 1;
+    animation-delay: 0s;
     opacity: 0;
 }
 @keyframes anim-name-out {
