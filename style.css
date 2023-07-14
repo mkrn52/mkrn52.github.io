@@ -400,3 +400,14 @@ nav.active .nav-links li:hover a{
     display: flex;
     justify-content: space-around;
 }
+.p1{
+    width: 100%;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.p1 img{
+    position: absolute;
+    height: 25vh;
+    width: 40vh;
+}

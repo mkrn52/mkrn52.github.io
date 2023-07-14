@@ -69,3 +69,9 @@ p1btnOpen.addEventListener('click',() => {
     p1modal.classList.add('open');
     parent.classList.add('open');
 })
+
+//Functions for project images
+
+function slideSwitch(n){
+    
+}
