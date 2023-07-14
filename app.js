@@ -1,3 +1,28 @@
+//Functions for project images
+
+var images =  document.querySelectorAll('.p1ImgDiv img');
+var dots = document.querySelectorAll('.switchDot');
+var currentImage = 0;
+const interval = 3000;
+var timer = setInterval(slideSwitch, interval);
+function slideSwitch(n){
+    for (let index = 0; index < images.length; index++) {
+        images[index].style.opacity = 0;
+        dots[index].className = dots[index].className.replace(' DotActive', '');        
+    }
+    currentImage = (currentImage + 1) % images.length; // update the index number
+
+    if (n != undefined) {
+        clearInterval(timer);
+        timer = setInterval(slideSwitch, interval);
+        currentImage = n;
+    }
+
+
+    images[currentImage].style.opacity = 1;
+    dots[currentImage].className += ' DotActive';
+}
+
 const navbar = document.querySelector('nav');
 const name_var = document.getElementsByClassName('name')[0];
 const about_div = document.getElementsByClassName('aboutTextDiv')[0];
@@ -34,7 +59,7 @@ window.onscroll = () => {
       }
     }
 };
-
+/*
 const toggle = document.getElementsByClassName('toggle')[0];
 const navlinks = document.getElementsByClassName('nav-links')[0];
 
@@ -51,10 +76,10 @@ const about = document.getElementsByClassName('aboutlink')[0];
 const projects = document.getElementsByClassName('projectslink')[0];
 const contact = document.getElementsByClassName('contactlink')[0];
 
-home.addEventListener('click', linkClicked);
-about.addEventListener('click', linkClicked);
-projects.addEventListener('click', linkClicked);
-contact.addEventListener('click', linkClicked);
+//home.addEventListener('click', linkClicked);
+//about.addEventListener('click', linkClicked);
+//projects.addEventListener('click', linkClicked);
+//contact.addEventListener('click', linkClicked);
 
 const p1modal = document.getElementsByClassName('modal-container')[0];
 const parent = document.getElementsByClassName('parent')[0];
@@ -69,17 +94,4 @@ p1btnOpen.addEventListener('click',() => {
     p1modal.classList.add('open');
     parent.classList.add('open');
 })
-
-//Functions for project images
-
-var images =  document.querySelectorAll('.slider img');
-var dots = document.querySelectorAll('.dot');
-var currentImage = 0;
-const interval = 3000;
-function slideSwitch(n){
-    for (let index = 0; index < images.length; index++) {
-        images[index].style.opacity = 0;
-        dots[index].className = dots[index].className.replace(' Dotactive', '');        
-    }
-
-}
+*/
