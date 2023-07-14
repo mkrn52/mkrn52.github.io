@@ -406,8 +406,26 @@ nav.active .nav-links li:hover a{
     margin-left: 5%;
     margin-top: 5%;
 }
-.p1 img{
+.p1ImgDiv img{
     position: absolute;
-    height: 25vh;
-    width: 40vh;
+    height: 35vh;
+    width: 70vh;
+}
+.p1ImgBtn{
+    margin-left: 17%;
+}
+.switchDot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 26%;
+    background-color: rgb(195, 191, 191);
+    border-radius: 50%;
+    display: inline-block;  
+}
+.switchDot:hover{
+    background-color: rgb(119, 50, 50);
+
+
 }
