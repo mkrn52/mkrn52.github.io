@@ -3,7 +3,7 @@
 var images =  document.querySelectorAll('.p1ImgDiv img');
 var dots = document.querySelectorAll('.switchDot');
 var currentImage = 0;
-const interval = 3000;
+const interval = 5000;
 var timer = setInterval(slideSwitch, interval);
 function slideSwitch(n){
     for (let index = 0; index < images.length; index++) {

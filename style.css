@@ -427,13 +427,3 @@ nav.active .nav-links li:hover a{
 .dotActive, .switchDot:hover{
     background-color: rgb(119, 50, 50);
 }
-.p1ImgDiv img:first-child {
-    z-index: 1;
-  }
-  .p1ImgDiv img:nth-child(2) {
-    z-index: 0;
-  }
-  .p1ImgDiv img:nth-child(3) {
-    z-index: 0;
-  }
-  
