@@ -406,11 +406,10 @@ nav.active .nav-links li:hover a{
     margin-left: 5%;
     margin-top: 5%;
     display: flex;
-    justify-content: space-around;
 }
 .p1ImgDiv{
     height: 45vh;
-    width: 120vh;
+    width: 70vh;
 }
 .p1ImgDiv img{
     position: absolute;
@@ -435,15 +434,16 @@ nav.active .nav-links li:hover a{
 }
 .projectText{
     margin: 0px;
-    font-size: 20px;
+    font-size: 32px;
     background-color: transparent;
     color: rgb(195, 191, 191);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ProjectSpecialWords{
-    font-size: 25px;
+    font-size: 37px;
     color: rgb(119, 50, 50);
 }
 .p1Text{
-    margin: 0;
+    margin-top: 30px;
+    margin-left: 70px;
 }
