@@ -451,7 +451,6 @@ nav.active .nav-links li:hover a{
 
 .projectTitle{
     margin: 0px;
-    padding-top: 1%;
     height: 20vh;
     font-size: 90px;
     color: rgb(195, 191, 191);
@@ -459,9 +458,14 @@ nav.active .nav-links li:hover a{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .projectsSeparator{
-    margin-left: 40%;
+    margin-left: 31%;
     background-color: rgb(119, 50, 50);
     border:0;
     height:5px;
-    width: 15%;
+    width: 35%;
+}
+.projectTitle hr{
+    margin-top: 3%;
+    margin-left: 8%;
+    width: 25%;
 }
