@@ -403,6 +403,12 @@ nav.active .nav-links li:hover a{
     position: relative;
     display: flex;
 }
+@media (max-width:900px) {
+.p1{
+    position: relative;
+    display:block;
+}
+}
 .p1ImgDiv{
     margin-top: 3%;
     height: 45vh;
@@ -417,7 +423,7 @@ nav.active .nav-links li:hover a{
 .p1ImgBtn{
     margin-top: 24%;
     margin-left: 21%;
-    position: absolute;
+    position: relative;
 }
 .switchDot{
     cursor: pointer;
@@ -446,16 +452,13 @@ nav.active .nav-links li:hover a{
     margin-top: 3%;
     margin-left: 6%;
 }
-.projectTitle{
-    margin-left: 50%;
-}
 
 .projectTitle{
     margin: 0px;
     height: 20vh;
     font-size: 90px;
+    text-align: center;
     color: rgb(195, 191, 191);
-    padding-left: 36%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .projectsSeparator{
@@ -466,7 +469,7 @@ nav.active .nav-links li:hover a{
     width: 35%;
 }
 .projectTitle hr{
-    margin-top: 3%;
-    margin-left: 8%;
-    width: 25%;
+    margin-top: 1%;
+    margin-left: 42%;
+    width: 15%;
 }
