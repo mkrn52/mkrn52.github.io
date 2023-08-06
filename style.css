@@ -399,7 +399,7 @@ nav.active .nav-links li:hover a{
 }
 .p1{
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -412,7 +412,7 @@ nav.active .nav-links li:hover a{
 }
 .p1Left{
     height: 45vh;
-    width: 80vw;
+    width: 45vw;
 }
 .p1ImgDiv{
     height: 35vh;
@@ -481,4 +481,9 @@ nav.active .nav-links li:hover a{
     margin-top: 1%;
     margin-left: 42%;
     width: 15%;
+}
+.github_Link{
+    color: rgb(195, 191, 191);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 38px;
 }
