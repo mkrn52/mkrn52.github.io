@@ -1,3 +1,6 @@
+html{   
+     scroll-behavior:smooth;
+}
 .parent{
     margin: 0px;
 }
