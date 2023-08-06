@@ -403,7 +403,7 @@ nav.active .nav-links li:hover a{
 }
 .p1{
     width: 100%;
-    height: 50vh;
+    height: 53vh;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -415,18 +415,18 @@ nav.active .nav-links li:hover a{
 }
 }
 .p1Left{
-    height: 45vh;
+    height: 53vh;
     width: 45vw;
 }
 .p1ImgDiv{
-    height: 35vh;
+    height: 45vh;
     width: 100%;
 }
 .p1ImgDiv img{
     border-style: solid;
     margin-left: 5%;
     position: absolute;
-    height: 35vh;
+    height: 45vh;
     width: 38vw;
     border-radius: 5px;
     border-color: rgb(195, 191, 191);
@@ -490,4 +490,7 @@ nav.active .nav-links li:hover a{
     color: rgb(195, 191, 191);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 38px;
+}
+.p1Text a{
+    font-size: 70px;
 }
