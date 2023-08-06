@@ -409,21 +409,28 @@ nav.active .nav-links li:hover a{
     display:block;
 }
 }
-.p1ImgDiv{
-    margin-top: 3%;
+.p1Left{
     height: 45vh;
     width: 50vw;
 }
+.p1ImgDiv{
+    height: 35vh;
+    width: 100%;
+}
 .p1ImgDiv img{
+    border-style: solid;
     margin-left: 5%;
     position: absolute;
     height: 35vh;
     width: 38vw;
+    border-radius: 5px;
+    border-color: rgb(195, 191, 191);
+    ;
 }
 .p1ImgBtn{
-    margin-top: 24%;
-    margin-left: 21%;
-    position: relative;
+    width: 100%;
+    margin-top: 1.5%;
+    text-align: center;
 }
 .switchDot{
     cursor: pointer;
@@ -449,12 +456,12 @@ nav.active .nav-links li:hover a{
     color: rgb(119, 50, 50);
 }
 .p1Text{    
-    margin-top: 3%;
     margin-left: 6%;
 }
 
 .projectTitle{
     margin: 0px;
+    padding-top: 1%;
     height: 20vh;
     font-size: 90px;
     text-align: center;
