@@ -399,9 +399,10 @@ nav.active .nav-links li:hover a{
 }
 .p1{
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     position: relative;
     display: flex;
+    justify-content: space-around;
 }
 @media (max-width:900px) {
 .p1{
@@ -411,7 +412,7 @@ nav.active .nav-links li:hover a{
 }
 .p1Left{
     height: 45vh;
-    width: 50vw;
+    width: 80vw;
 }
 .p1ImgDiv{
     height: 35vh;
@@ -470,6 +471,7 @@ nav.active .nav-links li:hover a{
 }
 .projectsSeparator{
     margin-left: 31%;
+    margin-top: 0px;
     background-color: rgb(119, 50, 50);
     border:0;
     height:5px;
