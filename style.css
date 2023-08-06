@@ -493,6 +493,7 @@ nav.active .nav-links li:hover a{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 38px;
 }
-.p1Text a{
+.p1Text .fa.fa-brands.fa-github{
     font-size: 70px;
+    color: rgb(195, 191, 191);
 }
