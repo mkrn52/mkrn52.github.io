@@ -36,15 +36,19 @@ const project_title = document.getElementsByClassName('projectTitle')[0];
 
 window.onscroll = () => {
     if(window.scrollY > 350 && window.scrollY < 710 ){
-        name_var.classList.add('active');
+        if(window.scrollY > 450){
+            name_var.classList.add('active');
+        }
         img_div.classList.add('active');
         about_div.classList.add('active');    
         nav_links.classList.remove("active");
     }else{
         if(window.scrollY < 350){
             name_var.classList.remove('active');
-            img_div.classList.remove('active');
-            about_div.classList.remove('active');   
+            if(window.scrollY < 250){
+                about_div.classList.remove('active');   
+                img_div.classList.remove('active');
+            }
             nav_links.classList.remove("active"); 
         }
         if(window.scrollY > 710){
@@ -53,7 +57,7 @@ window.onscroll = () => {
                 img_div.classList.remove('active');
                 about_div.classList.remove('active');  
                 p1_div.classList.add("active");
-                
+
                 project_title.classList.add("active");
                 if(window.scrollY > 1470){
                     nav_links.classList.remove("active");
