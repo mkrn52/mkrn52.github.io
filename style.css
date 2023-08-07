@@ -409,7 +409,45 @@ nav.active .nav-links li:hover a{
     position: relative;
     display: flex;
     justify-content: space-around;
+    animation: 1s anim-p1-out 1;
+    opacity: 0;
 }
+@keyframes anim-p1-out {
+    0% {
+      opacity: 100;
+    }
+    20% {
+      opacity: 0.75;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+}
+
+.p1.active{
+    animation: 1s anim-p1-in 1;
+    opacity: 1;
+}
+@keyframes anim-p1-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 @media (max-width:900px) {
 .p1{
     position: relative;
@@ -478,7 +516,44 @@ nav.active .nav-links li:hover a{
     text-align: center;
     color: rgb(195, 191, 191);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: 1s anim-project-Title-out 1;
+    opacity: 0;
 }
+@keyframes anim-project-Title-out {
+    0% {
+      opacity: 100;
+    }
+    20% {
+      opacity: 0.75;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+}
+.projectTitle.active{
+    animation: 1s anim-project-Title-in 1;
+    opacity: 1;
+}
+@keyframes anim-project-Title-in {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 .projectsSeparator{
     margin-left: 31%;
     margin-top: 0px;

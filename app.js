@@ -28,6 +28,9 @@ const name_var = document.getElementsByClassName('name')[0];
 const about_div = document.getElementsByClassName('aboutTextDiv')[0];
 const img_div = document.getElementsByClassName('myImg')[0];
 const nav_links = document.getElementsByClassName('nav-links')[0];
+const p1_div = document.getElementsByClassName('p1')[0];
+const project_title = document.getElementsByClassName('projectTitle')[0];
+
 
 
 
@@ -48,13 +51,18 @@ window.onscroll = () => {
             nav_links.classList.add("active");
             if(window.scrollY > 1180){
                 img_div.classList.remove('active');
-                about_div.classList.remove('active');   
+                about_div.classList.remove('active');  
+                p1_div.classList.add("active");
+                
+                project_title.classList.add("active");
                 if(window.scrollY > 1470){
                     nav_links.classList.remove("active");
                 }     
             }else{
+                p1_div.classList.remove("active");
                 img_div.classList.add('active');
-                about_div.classList.add('active');            
+                about_div.classList.add('active');  
+                project_title.classList.remove("active");          
             }
       }
     }
