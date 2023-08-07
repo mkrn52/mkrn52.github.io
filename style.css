@@ -465,6 +465,10 @@ nav.active .nav-links li:hover a{
 .p1Text{    
     margin-left: 6%;
 }
+.p2Text{    
+    margin-left: 3%;
+    width: 50vw;
+}
 
 .projectTitle{
     margin: 0px;
