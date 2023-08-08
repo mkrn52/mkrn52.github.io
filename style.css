@@ -247,17 +247,16 @@ nav.active .nav-links li:hover a{
 .name.active1{
     animation: 1s anim-name-jump 1;
     animation-delay: 0s;
-    color: aqua;
 }
 @keyframes anim-name-jump {
     25% {
-        transform: translateY(-5%);
+        transform: translateY(-3%);
     }
     50% {
-        transform: translateY(5%);
+        transform: translateY(3%);
     }
     70% {
-        transform: translateY(-5%);
+        transform: translateY(-3%);
     }
     100% {
       transform: translateY(0%);

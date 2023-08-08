@@ -29,9 +29,14 @@ function slideSwitch(n){
     images[currentImage].style.opacity = 1;
     dots[currentImage].className += ' DotActive';
 }
-
-function linkClicked(){
-    name_var.classList.add('active1');
+var prev_link = 0;
+function linkClicked(n){
+    if(n == 1 && n == prev_link){
+        name_var.classList.add('active1');
+    }else{
+        name_var.classList.remove('active1');
+    }
+    prev_link = n;
 }
 
 
