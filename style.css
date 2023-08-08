@@ -244,6 +244,25 @@ nav.active .nav-links li:hover a{
       transform: translateX(80%);
     }
   }
+.name.active1{
+    animation: 1s anim-name-jump 1;
+    animation-delay: 0s;
+    color: aqua;
+}
+@keyframes anim-name-jump {
+    25% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(5%);
+    }
+    70% {
+        transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
 .specialWords{
     font-size: 150px;
     color: rgb(119, 50, 50);

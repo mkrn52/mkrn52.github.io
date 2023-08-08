@@ -1,4 +1,11 @@
 //Functions for project images
+const navbar = document.querySelector('nav');
+const name_var = document.getElementsByClassName('name')[0];
+const about_div = document.getElementsByClassName('aboutTextDiv')[0];
+const img_div = document.getElementsByClassName('myImg')[0];
+const nav_links = document.getElementsByClassName('nav-links')[0];
+const p1_div = document.getElementsByClassName('p1')[0];
+const project_title = document.getElementsByClassName('projectTitle')[0];
 
 var images =  document.querySelectorAll('.p1ImgDiv img');
 var dots = document.querySelectorAll('.switchDot');
@@ -23,15 +30,9 @@ function slideSwitch(n){
     dots[currentImage].className += ' DotActive';
 }
 
-const navbar = document.querySelector('nav');
-const name_var = document.getElementsByClassName('name')[0];
-const about_div = document.getElementsByClassName('aboutTextDiv')[0];
-const img_div = document.getElementsByClassName('myImg')[0];
-const nav_links = document.getElementsByClassName('nav-links')[0];
-const p1_div = document.getElementsByClassName('p1')[0];
-const project_title = document.getElementsByClassName('projectTitle')[0];
-
-
+function linkClicked(){
+    name_var.classList.add('active1');
+}
 
 
 window.onscroll = () => {
