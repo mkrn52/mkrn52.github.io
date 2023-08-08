@@ -29,10 +29,16 @@ function slideSwitch(n){
     images[currentImage].style.opacity = 1;
     dots[currentImage].className += ' DotActive';
 }
-var prev_link = 0;
+var prev_link = 1;
 function linkClicked(n){
     if(n == 1 && n == prev_link){
-        name_var.classList.add('active1');
+        name_var.classList.remove('active1');
+        setTimeout(function(){
+            name_var.classList.remove('active');
+        }, 50);  
+        setTimeout(function(){
+            name_var.classList.add('active1');
+        }, 100);      
     }else{
         name_var.classList.remove('active1');
     }
@@ -43,7 +49,11 @@ function linkClicked(n){
 window.onscroll = () => {
     if(window.scrollY > 350 && window.scrollY < 710 ){
         if(window.scrollY > 450){
-            name_var.classList.add('active');
+            name_var.classList.remove('active1');
+            setTimeout(function(){
+                name_var.classList.add('active');
+            }, 50);  
+    
         }
         img_div.classList.add('active');
         about_div.classList.add('active');    
