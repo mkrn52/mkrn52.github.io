@@ -512,12 +512,13 @@ nav.active .nav-links li:hover a{
     margin: 0px;
     font-size: 38px;
     background-color: transparent;
-    color: rgb(195, 191, 191);
+    color: rgb(119, 50, 50);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ProjectSpecialWords{
     font-size: 43px;
-    color: rgb(119, 50, 50);
+    color: rgb(195, 191, 191);
+
 }
 .p1Text{    
     margin-left: 6%;
