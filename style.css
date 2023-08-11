@@ -446,10 +446,30 @@ nav.active .nav-links li:hover a{
     }
 }
 
-.p1.active, .p2.active{
+.p1.active{
     animation: 1s anim-p1-in 1;
     opacity: 1;
 }
+.p2.active{
+    animation: 1s anim-p1-in-right 1;
+    opacity: 1;
+}
+@keyframes anim-p1-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.35;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 @keyframes anim-p1-in {
     0% {
       opacity: 0;
