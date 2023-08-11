@@ -7,12 +7,18 @@ const nav_links = document.getElementsByClassName('nav-links')[0];
 const p1_div = document.getElementsByClassName('p1')[0];
 const project_title = document.getElementsByClassName('projectTitle')[0];
 
-var images =  document.querySelectorAll('.p1ImgDiv img');
-var dots = document.querySelectorAll('.switchDot');
+var p1images =  document.querySelectorAll('.p1ImgDiv img');
+var p2images =  document.querySelectorAll('.p2ImgDiv img');
+var dots = document.querySelectorAll('.switchDot1');
 var currentImage = 0;
 const interval = 5000;
 var timer = setInterval(slideSwitch, interval);
-function slideSwitch(n){
+function slideSwitch(project,n){
+    if(project == 1){
+        images = p1images;
+    }else if(project == 2){
+        images = p2images;
+    }
     for (let index = 0; index < images.length; index++) {
         images[index].style.opacity = 0;
         dots[index].className = dots[index].className.replace(' DotActive', '');        
@@ -31,11 +37,8 @@ function slideSwitch(n){
 }
 var prev_link = 1;
 function linkClicked(n){
-    if(n == 1 && n == prev_link){
+    if(n == 1 && window.scrollY == 0){
         name_var.classList.remove('active1');
-        setTimeout(function(){
-            name_var.classList.remove('active');
-        }, 50);  
         setTimeout(function(){
             name_var.classList.add('active1');
         }, 100);      
