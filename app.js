@@ -9,32 +9,36 @@ const project_title = document.getElementsByClassName('projectTitle')[0];
 
 var p1images =  document.querySelectorAll('.p1ImgDiv img');
 var p2images =  document.querySelectorAll('.p2ImgDiv img');
-var dots = document.querySelectorAll('.switchDot1');
+var dotsp1 = document.querySelectorAll('.switchDot1');
+var dotsp2 = document.querySelectorAll('.switchDot2');
+
 var currentImage = 0;
+dots = 0;
+
 const interval = 5000;
-var timer = setInterval(slideSwitch, interval);
-function slideSwitch(project,n){
+//var timer = setInterval(slideSwitch, interval);
+function slideSwitch(project, n){
     if(project == 1){
         images = p1images;
+        dots = dotsp1;
     }else if(project == 2){
         images = p2images;
+        dots = dotsp2;
     }
     for (let index = 0; index < images.length; index++) {
         images[index].style.opacity = 0;
+        console.log(index)
         dots[index].className = dots[index].className.replace(' DotActive', '');        
     }
-    currentImage = (currentImage + 1) % images.length; // update the index number
+    //currentImage = (currentImage + 1) % images.length; // update the index number
 
-    if (n != undefined) {
-        clearInterval(timer);
-        timer = setInterval(slideSwitch, interval);
-        currentImage = n;
-    }
-
+    currentImage = n;
 
     images[currentImage].style.opacity = 1;
     dots[currentImage].className += ' DotActive';
 }
+
+
 var prev_link = 1;
 function linkClicked(n){
     if(n == 1 && window.scrollY == 0){

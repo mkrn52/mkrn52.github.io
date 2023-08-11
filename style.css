@@ -505,6 +505,7 @@ nav.active .nav-links li:hover a{
 }
 .dotActive, .switchDot1:hover{
     background-color: rgb(119, 50, 50);
+    opacity: 1x;
 }
 
 .projectText{
