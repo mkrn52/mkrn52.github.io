@@ -86,6 +86,9 @@ window.onscroll = () => {
                 project_title.classList.add("active");
                 if(window.scrollY > 1470){
                     nav_links.classList.remove("active");
+                    if(window.scrollY > 2590){ // change after all projects added
+                        nav_links.classList.add("active");
+                    }
                 }     
             }else{
                 p1_div.classList.remove("active");
