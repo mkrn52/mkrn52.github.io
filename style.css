@@ -616,3 +616,11 @@ nav.active .nav-links li:hover a{
     font-size: 70px;
     color: rgb(195, 191, 191);
 }
+/** Contact Div*/
+
+.contactDiv{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(195, 191, 191);
+    ;
+}
