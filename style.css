@@ -6,7 +6,7 @@ html{
 }
 /* Nav Style */
 .nav{
-    margin-left: 30%;
+    /*margin-left: 30%;*/
     z-index: 1;
     width: 100%;
     display: flex;
@@ -121,12 +121,12 @@ nav.active .nav-links li:hover a{
 }
 @media (max-width:1170px) {
     .nav{
-            margin-left: 26%;
+            /*margin-left: 26%;*/
         }
 }
 @media (max-width:1070px) {
     .nav{
-            margin-left: 24%;
+            /*margin-left: 24%;*/
         }
 }
 
