@@ -6,7 +6,6 @@ html{
 }
 /* Nav Style */
 .nav{
-    margin-left: 30%;
     z-index: 1;
     width: 100%;
     max-width: 100%;
@@ -14,6 +13,7 @@ html{
     position: fixed;
     color: black;
     background-color: transparent;
+    align-content: right;
     align-items:right;
     text-align: right;
     justify-content: space-around;
@@ -112,6 +112,7 @@ nav.active .nav-links li:hover a{
 }
 .toggle{
     position: absolute;
+    margin-left: 5%;
     top: 1.5rem;
     display: none;
     flex-direction: column;
