@@ -9,6 +9,7 @@ html{
     /*margin-left: 30%;*/
     z-index: 1;
     width: 100%;
+    max-width: 100%;
     display: flex;
     position: fixed;
     color: black;
@@ -66,9 +67,6 @@ html{
     justify-content: center;
     letter-spacing: 3px;
     display: block;
-    padding: 1.5rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
     font-size: 16px;
 }
 .nav-links a{
@@ -102,7 +100,7 @@ nav.active .nav-links li:hover a{
 .toggle{
     position: absolute;
     top: 1.5rem;
-    margin-left: 30%;
+    padding-left: 30%;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -134,7 +132,7 @@ nav.active .nav-links li:hover a{
 @media (max-width:950px) {
     .toggle{
         display: flex;
-        margin-left: 90%;
+        padding-left: 90%;
     }
     .nav-links{
         background-color: black;
@@ -200,7 +198,7 @@ nav.active .nav-links li:hover a{
 .name{
     padding-left: 10%;
     padding-top: 10%;
-    font-size: 5vw;
+    font-size: 6vw;
     min-height: 70%;
     width: 90%;
     background-color: transparent;
@@ -270,6 +268,32 @@ nav.active .nav-links li:hover a{
     width: 100%;
 
 }
+@media (max-width:1150px) {
+  .name{
+    font-size: 8vw;
+  }
+}
+@media (max-width:950px) {
+  .name{
+    font-size: 10vw;
+  }
+}
+@media (max-width:800px) {
+  .name{
+    font-size: 11vw;
+  }
+  .specialWords{
+    font-size: 12vw;
+  }
+}
+@media (max-width:600px) {
+.name{
+  padding-top: 25%;
+}
+}
+
+
+
 
 
 
