@@ -81,6 +81,7 @@ html{
 }
 .nav-links a{
     color: rgb(195, 191, 191);
+    background-color: #454545;
     text-decoration: none;
     justify-content: center;
     letter-spacing: 3px;
@@ -113,6 +114,7 @@ nav.active .nav-links li:hover a{
 .toggle{
     position: absolute;
     margin-left: 5%;
+    z-index: 100;
     top: 1.5rem;
     display: none;
     flex-direction: column;
