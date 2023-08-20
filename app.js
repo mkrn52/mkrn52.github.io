@@ -53,7 +53,7 @@ function linkClicked(n){
     prev_link = n;
 }
 
-
+/** 
 window.onscroll = () => {
     if(window.scrollY > 350 && window.scrollY < 710 ){
         if(window.scrollY > 450){
@@ -65,7 +65,7 @@ window.onscroll = () => {
         }
         img_div.classList.add('active');
         about_div.classList.add('active');    
-        nav_links.classList.remove("active");
+        //nav_links.classList.remove("active");
     }else{
         if(window.scrollY < 350){
             name_var.classList.remove('active');
@@ -73,10 +73,10 @@ window.onscroll = () => {
                 about_div.classList.remove('active');   
                 img_div.classList.remove('active');
             }
-            nav_links.classList.remove("active"); 
+            //nav_links.classList.remove("active"); 
         }
         if(window.scrollY > 710){
-            nav_links.classList.add("active");
+            //nav_links.classList.add("active");
             if(window.scrollY > 1180){
                 img_div.classList.remove('active');
                 about_div.classList.remove('active');  
@@ -85,9 +85,9 @@ window.onscroll = () => {
 
                 project_title.classList.add("active");
                 if(window.scrollY > 1470){
-                    nav_links.classList.remove("active");
+                    //nav_links.classList.remove("active");
                     if(window.scrollY > 2590){ // change after all projects added
-                        nav_links.classList.add("active");
+                        //nav_links.classList.add("active");
                     }
                 }     
             }else{
@@ -100,7 +100,8 @@ window.onscroll = () => {
       }
     }
 };
-/*
+*/
+
 const toggle = document.getElementsByClassName('toggle')[0];
 const navlinks = document.getElementsByClassName('nav-links')[0];
 
@@ -135,4 +136,3 @@ p1btnOpen.addEventListener('click',() => {
     p1modal.classList.add('open');
     parent.classList.add('open');
 })
-*/
