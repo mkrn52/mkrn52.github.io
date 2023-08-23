@@ -794,6 +794,32 @@ nav.active .nav-links li:hover a{
     height: 35vh;
   }
 }
+@media (max-width:800px) {
+  .projects{
+    height: 200vh;
+  }
+  .projectR1{
+      display:inline;
+  }
+  .projectTitle{
+    font-size: 15vw;
+  }
+  .p1,.p2{
+      margin-left: 10%;
+      width: 80%;
+      margin-bottom: 5%;
+  }
+  .p1ImgBtn{
+    padding-top: 48%;
+  }
+  .p1ImgDiv img, .p2ImgDiv img{
+    width: 90%;
+    height: auto;
+  }
+  .p1ImgDiv,.p2ImgDiv{
+    height: 45vh;
+  }
+}
 
 /** Contact Div*/
 
