@@ -577,13 +577,20 @@ nav.active .nav-links li:hover a{
     height: 150vh;
     width: 100%;
 }
+.projectR1{
+  width: 100%;
+  height: 100vh;
+}
 .p1,.p2{
-    width: 100%;
-    height: 53vh;
+    width: 50%;
+    height: 90vh;
     position: relative;
-    display: flex;
     justify-content: space-around;
     animation: 1s anim-p1-in-right 1;
+    background-color:rgba(95, 97, 121, 0.324);
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(195, 191, 191);
 }
 @keyframes anim-p1-out {
     0% {
@@ -652,22 +659,21 @@ nav.active .nav-links li:hover a{
     width: 45vw;
 }
 .p1ImgDiv,.p2ImgDiv{
-    height: 45vh;
+  margin-top: 2%;
+    height: 38vh;
     width: 100%;
 }
 .p1ImgDiv img, .p2ImgDiv img{
     border-style: solid;
-    margin-left: 2%;
     position: absolute;
     height: auto;
-    width: 41vw;
+    margin-left: 5%;
+    width: 90%;
     border-radius: 5px;
     border-color: rgb(195, 191, 191);
-    ;
 }
 .p1ImgBtn, .p2ImgBtn{
     width: 100%;
-    margin-top: 1.5%;
     text-align: center;
 }
 .switchDot1, .switchDot2{
@@ -686,10 +692,6 @@ nav.active .nav-links li:hover a{
 .projectText{
     margin: 0px;
     font-size: 2.5vw;
-    background-color:rgba(95, 97, 121, 0.324);
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(195, 191, 191);
     color: rgb(119, 50, 50);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -704,7 +706,8 @@ nav.active .nav-links li:hover a{
 }
 .p1Text{    
     text-align: center;
-    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: 2%
 }
 .p2Text{    
     margin-left: 3%;
