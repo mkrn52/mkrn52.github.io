@@ -579,11 +579,12 @@ nav.active .nav-links li:hover a{
 }
 .projectR1{
   width: 100%;
-  height: 100vh;
+  display: flex;
+  height: 105vh;
 }
 .p1,.p2{
     width: 50%;
-    height: 90vh;
+    height: 103vh;
     position: relative;
     justify-content: space-around;
     animation: 1s anim-p1-in-right 1;
@@ -660,7 +661,7 @@ nav.active .nav-links li:hover a{
 }
 .p1ImgDiv,.p2ImgDiv{
   margin-top: 2%;
-    height: 38vh;
+    height: 45vh;
     width: 100%;
 }
 .p1ImgDiv img, .p2ImgDiv img{
@@ -668,12 +669,13 @@ nav.active .nav-links li:hover a{
     position: absolute;
     height: auto;
     margin-left: 5%;
-    width: 90%;
+    width: 45vw;
     border-radius: 5px;
     border-color: rgb(195, 191, 191);
 }
 .p1ImgBtn, .p2ImgBtn{
     width: 100%;
+    padding-top:46%;
     text-align: center;
 }
 .switchDot1, .switchDot2{
@@ -704,14 +706,10 @@ nav.active .nav-links li:hover a{
   color: rgb(195, 191, 191);
 
 }
-.p1Text{    
+.p1Text, .p2Text{    
     text-align: center;
     margin-top: 2%;
     margin-left: 2%
-}
-.p2Text{    
-    margin-left: 3%;
-    width: 50vw;
 }
 
 .projectTitle{
@@ -781,6 +779,21 @@ nav.active .nav-links li:hover a{
     font-size: 5vw;
     color: rgb(195, 191, 191);
 }
+
+@media (max-width:1260px) {
+  .p1,.p2{
+    height: 95vh;
+  }
+}
+@media (max-width:1025px) {
+  .p1,.p2{
+    height: 78vh;
+  }
+  .p1ImgDiv,.p2ImgDiv{
+    height: 35vh;
+  }
+}
+
 /** Contact Div*/
 
 .contactDiv{
