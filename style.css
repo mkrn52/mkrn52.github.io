@@ -828,3 +828,13 @@ nav.active .nav-links li:hover a{
   height: 500px;
 margin-top: 6%;
 }
+.contactInfo{
+  font-size: 3vw;
+  margin-left: 25%;
+  width: 50%;
+  background-color: #454545;
+}
+.contactSpecialWords{
+  font-size: 3.5vw;
+  color: rgb(119, 50, 50);
+}
