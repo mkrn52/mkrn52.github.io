@@ -802,3 +802,18 @@ nav.active .nav-links li:hover a{
     width: 100%;
     background-color:rgb(195, 191, 191);
 }
+.contactLeft{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+}
+.contactTitle{
+  margin-top: 25%;
+  padding-top: 1%;
+  height: 20vh;
+  font-size: 7vw;
+  text-align: center;
+  color: rgb(22, 23, 38);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
