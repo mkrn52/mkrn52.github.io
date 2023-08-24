@@ -871,7 +871,29 @@ nav.active .nav-links li:hover a{
     font-size: 8.5vw;
   }
 }
-
+@media (max-width:450px){
+  .projectTitle{
+    height: 5%;
+  }
+  .p1,.p2{
+    height: 25%;
+  }
+  .p1ImgDiv,.p2ImgDiv{
+    height: 40%;
+  }
+  .ProjectTitles{
+    font-size: 6.5vw;
+  }
+  .projectText{
+    font-size: 5.5vw;
+  }
+  .ProjectSpecialWords{
+    font-size: 6.5vw;
+  }
+  .p1Text .fa.fa-brands.fa-github,.p2Text .fa.fa-brands.fa-github{
+    font-size: 9.5vw;
+  }
+}
 
 /** Contact Div*/
 
