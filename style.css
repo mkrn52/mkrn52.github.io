@@ -26,23 +26,6 @@ html{
   max-width: 100%;
   width: 100%;
 }
-@keyframes anim-nav {
-    0% {
-      opacity: 0.1;
-      transform: translateX(-80%);
-    }
-    20% {
-      opacity: 0.3;
-    }
-    50% {
-      opacity: 0.6;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
 .navName{
     color: rgb(63, 65, 103);
     letter-spacing: 3px;
@@ -77,6 +60,7 @@ html{
     letter-spacing: 3px;
     display: block;
     font-size: 16px;
+    animation: 2s anim-nav-in 1;
 }
 .nav-links a{
     color: rgb(195, 191, 191);
@@ -108,7 +92,6 @@ nav.active .nav-links li:hover a{
 }
 .nav-links li:hover a{
     color: white;
-    background-color: black;
     font-weight: bold;
     cursor: pointer;
     opacity: 100%;
@@ -134,6 +117,41 @@ nav.active .nav-links li:hover a{
 .toggle:hover{
     cursor: pointer;
 }
+@keyframes anim-nav-in {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-80%);
+  }
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes anim-nav {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-80%);
+  }
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(105%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 @media (max-width:1170px) {
     .nav{
             /*margin-left: 26%;*/
@@ -151,7 +169,7 @@ nav.active .nav-links li:hover a{
         display: flex;
     }
     .nav-links{
-        background-color: black;
+        background-color: transparent;
         flex-direction:column;
         display: none;
         width: 100%;
@@ -193,7 +211,6 @@ nav.active .nav-links li:hover a{
     }
     .nav.active{
         height: 40vh;
-        background-color: black;
     }
     .image{
         display: none;
