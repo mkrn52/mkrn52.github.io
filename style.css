@@ -819,7 +819,17 @@ nav.active .nav-links li:hover a{
   .p1ImgDiv,.p2ImgDiv{
     height: 45vh;
   }
+  .projectText{
+    font-size: 3.5vw;
+  }
+  .ProjectSpecialWords{
+    font-size: 4.5vw;
+  }
+  .ProjectTitles{
+    font-size: 4.5vw;
+  }
 }
+
 
 /** Contact Div*/
 
