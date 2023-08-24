@@ -828,6 +828,29 @@ nav.active .nav-links li:hover a{
   .ProjectTitles{
     font-size: 4.5vw;
   }
+  .p1Text .fa.fa-brands.fa-github,.p2Text .fa.fa-brands.fa-github{
+    font-size: 6.5vw;
+  }
+}
+@media (max-width:645px){
+  .p1,.p2{
+    height: 40%;
+  }
+  .p1ImgDiv,.p2ImgDiv{
+    height: 45%;
+  }
+  .ProjectTitles{
+    font-size: 5.5vw;
+  }
+  .projectText{
+    font-size: 4.5vw;
+  }
+  .ProjectSpecialWords{
+    font-size: 5.5vw;
+  }
+  .p1Text .fa.fa-brands.fa-github,.p2Text .fa.fa-brands.fa-github{
+    font-size: 8.5vw;
+  }
 }
 
 
