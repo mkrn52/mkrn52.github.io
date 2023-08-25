@@ -826,6 +826,7 @@ nav.active .nav-links li:hover a{
   .p1,.p2{
       margin-left: 10%;
       width: 80%;
+      height: 82vh;
       margin-bottom: 5%;
   }
   .p1ImgBtn{
@@ -898,7 +899,7 @@ nav.active .nav-links li:hover a{
 /** Contact Div*/
 
 .contactDiv{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     background-color:rgb(195, 191, 191);
@@ -909,7 +910,7 @@ nav.active .nav-links li:hover a{
   text-align: center;
 }
 .contactTitle{
-  margin-top: 25%;
+  margin-top: 30%;
   padding-top: 1%;
   height: 20vh;
   font-size: 7vw;
@@ -987,6 +988,26 @@ nav.active .nav-links li:hover a{
   cursor: pointer;
   color: white;
   border-radius: 20px;
+}
+.sendBtn:hover{
+  background-color: rgb(68, 16, 16);
+}
+@media (max-width:1000px){
+  .contactForm{
+    width: 80%;
+    height: auto;  
+  }
+  .contactSpecialWords{
+    font-size: 2.3vw;
+  }
+}
+@media (max-width:800px){
+  .contactTitle{
+    font-size: 9vw;
+  }
+  .contactSpecialWords{
+    font-size: 2.4vw;
+  }
 }
 /** Height Restrictions for all divs */
 @media (min-height:900px){
