@@ -926,16 +926,15 @@ nav.active .nav-links li:hover a{
 .vertLine{
   border-left: 6px solid rgb(119, 50, 50);
   height: 500px;
-margin-top: 6%;
+  margin-top: 7%;
 }
 .contactInfo{
   font-size: 3vw;
-  margin-left: 25%;
-  width: 50%;
-  background-color: #454545;
+  margin-left: 10%;
+  width: 80%;
 }
 .contactSpecialWords{
-  font-size: 3.5vw;
+  font-size: 2.2vw;
   color: rgb(119, 50, 50);
 }
 /** Height Restrictions for all divs */
