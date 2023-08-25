@@ -1003,16 +1003,64 @@ nav.active .nav-links li:hover a{
     width: 80%;
     height: auto;  
   }
+  .contactTitle{
+    font-size: 10vw;
+  }
   .contactSpecialWords{
-    font-size: 2.3vw;
+    font-size: 2.8vw;
   }
 }
 @media (max-width:800px){
   .contactTitle{
-    font-size: 9vw;
+    font-size: 10vw;
   }
   .contactSpecialWords{
-    font-size: 2.4vw;
+    font-size: 3vw;
+  }
+}
+@media (max-width:750px){
+  .contactTitle{
+    font-size: 13vw;
+  }
+  .contactSpecialWords{
+    font-size: 4vw;
+  }
+  .contactLeft{
+    height: 50%;
+    width: 100%;
+  }
+  .contactRight{
+    height: 50%;
+    width: 100%;
+  }
+  .contactForm{
+    height: auto;
+    width: 60%;
+  }
+  .contactDiv{
+    text-align: center;
+    display: block;
+    height: auto;
+  }
+  .vertLine{
+    height: 1%;
+    margin-top: 0px;
+    margin-bottom: 5%;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(119, 50, 50);
+  }
+  .inputBox, .inputBoxLarge{
+    height: 10%;
+  }
+  .inputBoxLarge{
+    height: 15%;
+  }
+  .formTitle{
+    font-size: 4vw;
+  }
+  .sendBtn{
+    height: 13%;
   }
 }
 /** Height Restrictions for all divs */
