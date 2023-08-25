@@ -938,3 +938,22 @@ margin-top: 6%;
   font-size: 3.5vw;
   color: rgb(119, 50, 50);
 }
+/** Height Restrictions for all divs */
+@media (min-height:900px){
+  .landing{
+    height: 60vh;
+  }
+  .about{
+    height: 85vh;
+  }
+  .p1,.p2{
+    height: 45vh;
+  }
+  .p1ImgDiv,.p2ImgDiv{
+    height: 42%;
+  }
+  .projectTitle{
+    height: 10%;
+    font-size: 12vw;
+  }
+}
