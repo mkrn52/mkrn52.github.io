@@ -979,8 +979,8 @@ nav.active .nav-links li:hover a{
   text-align: center;
 }
 .sendBtn{
-  height: 3%;
-  width: 40%;
+  height: 5%;
+  width: 30%;
   background-color: rgb(119, 50, 50);
   border: 0;
   outline: none;
