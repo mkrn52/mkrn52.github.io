@@ -144,7 +144,7 @@ nav.active .nav-links li:hover a{
   }
   50% {
     opacity: 0.6;
-    transform: translateY(105%);
+    transform: translateY(0%);
   }
   100% {
     opacity: 1;
@@ -938,10 +938,21 @@ nav.active .nav-links li:hover a{
   color: rgb(119, 50, 50);
 }
 .contactForm{
-  background-color: #E6E6FA;
+  background-color:rgba(170, 164, 164, 0.678);
   text-align: center;
-  justify-content: space-around;
-  
+  width: 50%;  
+}
+.contactRight{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputBox{
+  margin-bottom: 3%;
+  width: 60%;
+
 }
 /** Height Restrictions for all divs */
 @media (min-height:900px){
