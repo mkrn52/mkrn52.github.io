@@ -937,6 +937,12 @@ nav.active .nav-links li:hover a{
   font-size: 2.2vw;
   color: rgb(119, 50, 50);
 }
+.contactForm{
+  background-color: #E6E6FA;
+  text-align: center;
+  justify-content: space-around;
+  
+}
 /** Height Restrictions for all divs */
 @media (min-height:900px){
   .landing{
