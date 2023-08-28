@@ -601,13 +601,15 @@ nav.active .nav-links li:hover a{
 }
 .projectR1{
   width: 100%;
+  margin-left: 0px;
   display: flex;
   height: 105vh;
+  justify-content: space-evenly;
 }
 .p1,.p2{
-    width: 50%;
+    width: 45%;
     overflow: scroll;
-    height: 103vh;
+    height:103vh;
     position: relative;
     justify-content: space-around;
     animation: 1s anim-p1-in-right 1;
@@ -692,7 +694,7 @@ nav.active .nav-links li:hover a{
     border-style: solid;
     position: absolute;
     height: 40vh;
-    margin-left: 5%;
+    margin-left: 0%;
     width: 45vw;
     border-radius: 5px;
     box-sizing: border-box;
@@ -735,7 +737,7 @@ nav.active .nav-links li:hover a{
 .p1Text, .p2Text{    
     text-align: center;
     margin-top: 2%;
-    margin-left: 2%
+    margin-left: 0%;
 }
 
 .projectTitle{
