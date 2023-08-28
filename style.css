@@ -223,6 +223,7 @@ nav.active .nav-links li:hover a{
     height: 100vh;
     max-width: 100%;
     display: flex;
+    overflow: scroll;
     text-align: center;
     background-color: rgb(22, 23, 38);
     /**background-image: radial-gradient(black 10%, gray, black 97%);*/
@@ -351,6 +352,7 @@ nav.active .nav-links li:hover a{
     background-color: rgb(195, 191, 191);
     height: 100vh;
     width: 100%;
+    overflow: scroll;
     display: flex;
     justify-content: space-around;
 }
@@ -681,22 +683,25 @@ nav.active .nav-links li:hover a{
     width: 45vw;
 }
 .p1ImgDiv,.p2ImgDiv{
-  margin-top: 2%;
-    height: 45vh;
+    margin-top: 2%;
+    height: 47vh;
     width: 100%;
+    position: relative;
 }
 .p1ImgDiv img, .p2ImgDiv img{
     border-style: solid;
     position: absolute;
-    height: auto;
+    height: 40vh;
     margin-left: 5%;
     width: 45vw;
     border-radius: 5px;
+    box-sizing: border-box;
     border-color: rgb(119, 50, 50);
 }
 .p1ImgBtn, .p2ImgBtn{
     width: 100%;
-    padding-top:46%;
+    position: absolute;
+    bottom: 0px;
     text-align: center;
 }
 .switchDot1, .switchDot2{
