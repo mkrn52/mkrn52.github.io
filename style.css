@@ -17,7 +17,7 @@ html{
     align-items:right;
     text-align: center;
     justify-content: space-around;
-    height: 8vh;
+    height: 70px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 4s anim-nav 1;
 }
@@ -31,7 +31,7 @@ html{
   letter-spacing: 3px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 .nav-links{
     align-items: center;
@@ -364,8 +364,8 @@ nav.active .nav-links li:hover a{
 .aboutTextDiv{
     align-items: center;
     margin-top: 3%;
-    height: 30vh;
     z-index: 1;
+    overflow: scroll;
     width: 50%;
     font-size: 2.5vw;
     background-color: transparent;
@@ -608,8 +608,9 @@ nav.active .nav-links li:hover a{
 .p1,.p2{
     width: 45%;
     overflow: scroll;
-    height:103vh;
+    height: 58vw;
     position: relative;
+    display: inline-block;
     justify-content: space-around;
     animation: 1s anim-p1-in-right 1;
     background-color:rgba(95, 97, 121, 0.324);
@@ -676,12 +677,16 @@ nav.active .nav-links li:hover a{
 @media (max-width:900px) {
 .p1{
     position: relative;
-    display:block;
+    display:inline-block;
 }
 }
 .p1Left, .p2Right{
     height: 53vh;
     width: 45vw;
+}
+.p1Img{
+  height: 23vw;
+  width: 45vw;
 }
 .p1ImgDiv,.p2ImgDiv{
     margin-top: 2%;
@@ -690,9 +695,9 @@ nav.active .nav-links li:hover a{
     width: 100%;
     position: relative;
 }
-.p1ImgDiv img, .p2ImgDiv img{
+.p1 img, .p2ImgDiv img{
     border-style: solid;
-    position: absolute;
+    position:absolute;
     height: auto;
     margin-left: 0%;
     width: 45vw;
@@ -702,7 +707,7 @@ nav.active .nav-links li:hover a{
 }
 .p1ImgBtn, .p2ImgBtn{
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     text-align: center;
 }
@@ -735,6 +740,7 @@ nav.active .nav-links li:hover a{
 
 }
 .p1Text, .p2Text{    
+    position: relative;
     text-align: center;
     margin-top: 2%;
     margin-left: 0%;
@@ -742,8 +748,8 @@ nav.active .nav-links li:hover a{
 
 .projectTitle{
     margin: 0px;
-    padding-top: 1%;
-    font-size: 7vw;
+    padding-top: 3%;
+    font-size: 8vw;
     text-align: center;
     color: rgb(238, 238, 238);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -809,12 +815,10 @@ nav.active .nav-links li:hover a{
 
 @media (max-width:1260px) {
   .p1,.p2{
-    height: 95vh;
   }
 }
 @media (max-width:1025px) {
   .p1,.p2{
-    height: 78vh;
   }
   .p1ImgDiv,.p2ImgDiv{
     height: 35vh;
@@ -827,6 +831,10 @@ nav.active .nav-links li:hover a{
   .projectR1{
       display:inline;
   }
+  .p1Img{
+    width: 80vw;
+    height: 40vw;
+  }
   .projectTitle{
     font-size: 15vw;
   }
@@ -837,9 +845,9 @@ nav.active .nav-links li:hover a{
       margin-bottom: 5%;
   }
   .p1ImgBtn{
-    padding-top: 48%;
+    padding-top: 0%;
   }
-  .p1ImgDiv img, .p2ImgDiv img{
+  .p1 img, .p2ImgDiv img{
     width: 90%;
     height: auto;
     margin-left: 5%;
@@ -883,7 +891,6 @@ nav.active .nav-links li:hover a{
 }
 @media (max-width:450px){
   .projectTitle{
-    height: 0%;
   }
   .p1,.p2{
     height: 33%;
