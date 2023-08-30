@@ -12,13 +12,13 @@ html{
     display: flex;
     position: fixed;
     color: black;
-    background-color: transparent;
+    background-color: black;
     align-content: right;
     align-items:right;
-    text-align: right;
+    text-align: center;
     justify-content: space-around;
     height: 8vh;
-    font-family: 'Bitter', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 4s anim-nav 1;
 }
 .nav.active{
@@ -27,9 +27,11 @@ html{
   width: 100%;
 }
 .navName{
-    color: rgb(63, 65, 103);
-    letter-spacing: 3px;
+  color: rgb(119, 50, 50);
+  letter-spacing: 3px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
+    margin-top: 0.5rem;
 }
 .nav-links{
     align-items: center;
@@ -37,7 +39,6 @@ html{
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: gray;
     opacity:100%;
 }
 .nav-links ul{
@@ -64,8 +65,9 @@ html{
 }
 .nav-links a{
     color: rgb(195, 191, 191);
-    background-color:black;
+    opacity: 50%;
     text-decoration: none;
+    background-color: transparent;
     justify-content: center;
     letter-spacing: 3px;
     display: block;
@@ -76,7 +78,6 @@ html{
 }
 nav.active .nav-links li:hover a{
     color: #E6E6FA;
-    background-color: #454545;
     border-width: 5px;
     border-color: white;
     border-style: solid;
@@ -92,6 +93,7 @@ nav.active .nav-links li:hover a{
 }
 .nav-links li:hover a{
     color: white;
+    background-color: gray;
     font-weight: bold;
     cursor: pointer;
     opacity: 100%;
@@ -126,7 +128,7 @@ nav.active .nav-links li:hover a{
     opacity: 0.3;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.5;
     transform: translateY(0%);
   }
   100% {
@@ -147,7 +149,6 @@ nav.active .nav-links li:hover a{
     transform: translateY(0%);
   }
   100% {
-    opacity: 1;
     transform: translateY(0%);
   }
 }
@@ -169,13 +170,13 @@ nav.active .nav-links li:hover a{
         display: flex;
     }
     .nav-links{
-        background-color: transparent;
         flex-direction:column;
         display: none;
         width: 100%;
     }
     .nav{
         flex-direction: column;
+        background: transparent;
         width: 100%;
         margin: 0%;
     }
@@ -185,6 +186,7 @@ nav.active .nav-links li:hover a{
     }
     .nav-links li {
         width: 100%;
+        background-color: rgb(45, 45, 45);
         text-align: center;
     }
     .nav-links li a{
@@ -196,6 +198,9 @@ nav.active .nav-links li:hover a{
         color: #E6E6FA;
         font-weight: bold;
         background-color: #454545;
+    }
+    .navName{
+      display: none;
     }
     .navName.active{
         padding-top: 2.5rem;
@@ -233,6 +238,7 @@ nav.active .nav-links li:hover a{
 .name{
     font-size: 6vmax;
     min-height: 70%;
+    margin-top: 10%;
     width: 100%;
     left: 0;
     right: 0;
@@ -335,11 +341,6 @@ nav.active .nav-links li:hover a{
   .specialWords{
     font-size: 12vw;
   }
-}
-@media (max-width:600px) {
-.name{
-  padding-top: 20%;
-}
 }
 .separator{
     height: 1vh;
@@ -920,6 +921,7 @@ nav.active .nav-links li:hover a{
   align-items: center;
 }
 .infoDiv{
+  width: 100%;
   text-align: center;
 }
 .contactTitle{
@@ -944,7 +946,7 @@ nav.active .nav-links li:hover a{
 }
 .contactInfo{
   font-size: 3vw;
-  width: 80%;
+  width: 100%;
   white-space: nowrap;
   overflow: scroll;
 }
