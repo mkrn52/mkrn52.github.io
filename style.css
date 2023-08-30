@@ -595,7 +595,7 @@ nav.active .nav-links li:hover a{
 /** Projects Div style**/
 .projects{
     background-color:rgb(34, 40, 49);
-    height: 150vh;
+    height: 100vw;
     width: 100%;
     overflow: scroll;
 }
@@ -916,7 +916,7 @@ nav.active .nav-links li:hover a{
 /** Contact Div*/
 
 .contactDiv{
-    height: 90vh;
+    height: 90vw;
     width: 100%;
     display: flex;
     background-color:rgb(238, 238, 238);
@@ -1028,14 +1028,6 @@ nav.active .nav-links li:hover a{
     font-size: 2.8vw;
   }
 }
-@media (max-width:800px){
-  .contactTitle{
-    font-size: 10vw;
-  }
-  .contactSpecialWords{
-    font-size: 3vw;
-  }
-}
 @media (max-width:750px){
   .contactTitle{
     font-size: 13vw;
@@ -1081,14 +1073,7 @@ nav.active .nav-links li:hover a{
     height: 13%;
   }
 }
-@media (max-width:800px){
-  .contactSpecialWords{
-    font-size: 5vw;
-  }
-  .contactInfo{
-    font-size: 5vw;
-  }
-}
+
 
 /** Height Restrictions for all divs */
 @media (min-height:900px){
