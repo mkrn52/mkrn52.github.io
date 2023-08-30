@@ -9,7 +9,7 @@ const p2_div = document.getElementsByClassName('p2')[0];
 const project_title = document.getElementsByClassName('projectTitle')[0];
 
 var p1images =  document.querySelectorAll('.p1 img');
-var p2images =  document.querySelectorAll('.p2ImgDiv img');
+var p2images =  document.querySelectorAll('.p2 img');
 var dotsp1 = document.querySelectorAll('.switchDot1');
 var dotsp2 = document.querySelectorAll('.switchDot2');
 

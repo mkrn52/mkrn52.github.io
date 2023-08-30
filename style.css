@@ -597,6 +597,7 @@ nav.active .nav-links li:hover a{
     background-color:rgb(34, 40, 49);
     height: 150vh;
     width: 100%;
+    overflow: scroll;
 }
 .projectR1{
   width: 100%;
@@ -684,7 +685,7 @@ nav.active .nav-links li:hover a{
     height: 53vh;
     width: 45vw;
 }
-.p1Img{
+.p1Img, .p2Img{
   height: 23vw;
   width: 45vw;
 }
@@ -695,7 +696,7 @@ nav.active .nav-links li:hover a{
     width: 100%;
     position: relative;
 }
-.p1 img, .p2ImgDiv img{
+.p1 img, .p2 img{
     border-style: solid;
     position:absolute;
     height: auto;
@@ -831,7 +832,7 @@ nav.active .nav-links li:hover a{
   .projectR1{
       display:inline;
   }
-  .p1Img{
+  .p1Img, .p2Img{
     width: 80vw;
     height: 40vw;
   }
@@ -847,7 +848,7 @@ nav.active .nav-links li:hover a{
   .p1ImgBtn{
     padding-top: 0%;
   }
-  .p1 img, .p2ImgDiv img{
+  .p1 img, .p2 img{
     width: 90%;
     height: auto;
     margin-left: 5%;
