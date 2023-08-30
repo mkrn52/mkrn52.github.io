@@ -363,7 +363,7 @@ nav.active .nav-links li:hover a{
 }
 .aboutTextDiv{
     align-items: center;
-    margin-top: 3%;
+    margin-top: 5%;
     z-index: 1;
     overflow: scroll;
     width: 50%;
@@ -748,7 +748,7 @@ nav.active .nav-links li:hover a{
 
 .projectTitle{
     margin: 0px;
-    padding-top: 3%;
+    padding-top: 5%;
     font-size: 8vw;
     text-align: center;
     color: rgb(238, 238, 238);
