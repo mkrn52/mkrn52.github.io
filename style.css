@@ -55,7 +55,7 @@ html{
 }
 
 .nav-links.active a{
-    color: rgb(189, 189, 198);
+    color: rgb(238, 238, 238);
     text-decoration: none;
     justify-content: center;
     letter-spacing: 3px;
@@ -106,14 +106,14 @@ nav.active .nav-links li:hover a{
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 25px;
+    width: 40px;
+    height: 35px;
     color: beige;
 }
 .toggle .bar{
-    height: 4px;
+    height: 6px;
     width: 100%;
-    background-color: rgb(214, 90, 49);
+    background-color: black;
     border-radius: 10px;
 }
 .toggle:hover{
@@ -210,6 +210,7 @@ nav.active .nav-links li:hover a{
     }
     .nav-links.active{
         padding-left: 0%;
+        
         text-align: center;
         width: 100%;
         display: flex;
@@ -860,14 +861,13 @@ nav.active .nav-links li:hover a{
 /** Contact Div*/
 
 .contactDiv{
-    height: 90vw;
+    height: 50vw;
     width: 100%;
     display: flex;
     background-color:rgb(238, 238, 238);
 }
 .contactLeft{
   width: 50%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -875,6 +875,7 @@ nav.active .nav-links li:hover a{
 .infoDiv{
   width: 100%;
   text-align: center;
+  border-right: 5px solid rgb(214, 90, 49);
 }
 .contactTitle{
   height: auto;
@@ -893,7 +894,7 @@ nav.active .nav-links li:hover a{
 }
 .vertLine{
   border-left: 6px solid rgb(214, 90, 49);
-  height: 500px;
+  height: 40vw;
   margin-top: 7%;
 }
 .contactInfo{
@@ -909,6 +910,7 @@ nav.active .nav-links li:hover a{
 .contactForm{
   background-color:rgb(34, 40, 49);
   width: 60%;  
+  height: 25vw;
   border-radius: 5%;
   border-color: white;
   border-width: 5px;
@@ -921,7 +923,6 @@ nav.active .nav-links li:hover a{
 }
 .contactRight{
   width: 50%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -929,9 +930,9 @@ nav.active .nav-links li:hover a{
 .inputBox, .inputBoxLarge{
   margin-bottom: 3%;
   width: 70%;
-  height: 5%;
-  font-size: 1vw;
-  background-color: lightgray;
+  height: 2.5vw;
+  font-size: 1.25vw;
+  background-color: rgb(238, 238, 238);
 }
 .formLeftDiv{
   width: 100%;
@@ -939,7 +940,7 @@ nav.active .nav-links li:hover a{
   text-align: left;
 }
 .inputBoxLarge{
-  height: 10%;
+  height: 6vw;
 }
 .sendBtnDiv{
   margin-top: 2%;
@@ -948,7 +949,7 @@ nav.active .nav-links li:hover a{
   text-align: center;
 }
 .sendBtn{
-  height: 5%;
+  height: 3vw;
   width: 30%;
   background-color: rgb(214, 90, 49);
   border: 0;
@@ -995,6 +996,9 @@ nav.active .nav-links li:hover a{
     text-align: center;
     display: block;
     height: auto;
+  }
+  .infoDiv{
+    border: 0px;
   }
   .vertLine{
     height: 1%;
