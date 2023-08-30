@@ -595,7 +595,7 @@ nav.active .nav-links li:hover a{
 /** Projects Div style**/
 .projects{
     background-color:rgb(34, 40, 49);
-    height: 100vw;
+    height: 200vw;
     width: 100%;
     overflow: scroll;
 }
@@ -603,7 +603,7 @@ nav.active .nav-links li:hover a{
   width: 100%;
   margin-left: 0px;
   display: flex;
-  height: 105vh;
+  height: 80vw;
   justify-content: space-evenly;
 }
 .p1,.p2{
@@ -813,21 +813,9 @@ nav.active .nav-links li:hover a{
     font-size: 5vw;
     color: rgb(214, 90, 49);
 }
-
-@media (max-width:1260px) {
-  .p1,.p2{
-  }
-}
-@media (max-width:1025px) {
-  .p1,.p2{
-  }
-  .p1ImgDiv,.p2ImgDiv{
-    height: 35vh;
-  }
-}
 @media (max-width:800px) {
   .projects{
-    height: 200vh;
+    height: 200vw;
   }
   .projectR1{
       display:inline;
@@ -842,7 +830,7 @@ nav.active .nav-links li:hover a{
   .p1,.p2{
       margin-left: 10%;
       width: 80%;
-      height: 82vh;
+      height: 79vw;
       margin-bottom: 5%;
   }
   .p1ImgBtn{
@@ -853,9 +841,6 @@ nav.active .nav-links li:hover a{
     height: auto;
     margin-left: 5%;
     margin-top: 2%;
-  }
-  .p1ImgDiv,.p2ImgDiv{
-    height: 45vh;
   }
   .projectText{
     font-size: 3.5vw;
@@ -870,48 +855,7 @@ nav.active .nav-links li:hover a{
     font-size: 6.5vw;
   }
 }
-@media (max-width:645px){
-  .p1,.p2{
-    height: 40%;
-  }
-  .p1ImgDiv,.p2ImgDiv{
-    height: 50%;
-  }
-  .ProjectTitles{
-    font-size: 5.5vw;
-  }
-  .projectText{
-    font-size: 4.5vw;
-  }
-  .ProjectSpecialWords{
-    font-size: 5.5vw;
-  }
-  .p1Text .fa.fa-brands.fa-github,.p2Text .fa.fa-brands.fa-github{
-    font-size: 8.5vw;
-  }
-}
-@media (max-width:450px){
-  .projectTitle{
-  }
-  .p1,.p2{
-    height: 33%;
-  }
-  .p1ImgDiv,.p2ImgDiv{
-    height: 70%;
-  }
-  .ProjectTitles{
-    font-size: 6.5vw;
-  }
-  .projectText{
-    font-size: 5.5vw;
-  }
-  .ProjectSpecialWords{
-    font-size: 6.5vw;
-  }
-  .p1Text .fa.fa-brands.fa-github,.p2Text .fa.fa-brands.fa-github{
-    font-size: 9.5vw;
-  }
-}
+
 
 /** Contact Div*/
 
@@ -1095,7 +1039,6 @@ nav.active .nav-links li:hover a{
   .p1ImgDiv,.p2ImgDiv{
   }
   .projectTitle{
-    height: 7%;
     font-size: 12vw;
   }
   .contactDiv{
