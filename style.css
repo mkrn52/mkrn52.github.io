@@ -12,7 +12,7 @@ html{
     display: flex;
     position: fixed;
     color: black;
-    background-color: black;
+    background-color: rgb(57, 62, 70);
     align-content: right;
     align-items:right;
     text-align: center;
@@ -27,7 +27,7 @@ html{
   width: 100%;
 }
 .navName{
-  color: rgb(119, 50, 50);
+  color: rgb(214, 90, 49);
   letter-spacing: 3px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
@@ -48,8 +48,8 @@ html{
     /**width: 30rem;**/
 }
 .nav-links.active li:hover a{
-    color: rgb(195, 191, 191);
-    background-color: rgb(22, 23, 38);
+    color: rgb(34, 40, 49);
+    background-color: rgb(238, 238, 238);
     font-weight: bold;
     cursor: pointer;
 }
@@ -64,7 +64,7 @@ html{
     animation: 2s anim-nav-in 1;
 }
 .nav-links a{
-    color: rgb(195, 191, 191);
+    color: rgb(238, 238, 238);
     opacity: 50%;
     text-decoration: none;
     background-color: transparent;
@@ -113,7 +113,7 @@ nav.active .nav-links li:hover a{
 .toggle .bar{
     height: 4px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(214, 90, 49);
     border-radius: 10px;
 }
 .toggle:hover{
@@ -228,12 +228,12 @@ nav.active .nav-links li:hover a{
     max-width: 100%;
     display: flex;
     text-align: center;
-    background-color: rgb(22, 23, 38);
+    background-color: rgb(238, 238, 238);
     /**background-image: radial-gradient(black 10%, gray, black 97%);*/
 }
 
 .fa.fa-brands.fa-github, .fa.fa-brands.fa-linkedin{
-    color: rgb(119, 50, 50);
+    color: rgb(214, 90, 49);
 }
 .name{
     font-size: 6vmax;
@@ -243,7 +243,7 @@ nav.active .nav-links li:hover a{
     left: 0;
     right: 0;
     background-color: transparent;
-    color: rgb(195, 191, 191);
+    color: rgb(34, 40, 49);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 2s anim-name-in 1;
     animation-delay: 0s;
@@ -305,7 +305,7 @@ nav.active .nav-links li:hover a{
   }
 .specialWords{
     font-size: 12vw;
-    color: rgb(119, 50, 50);
+    color: rgb(214, 90, 49);
     width: 100%;
 
 }
@@ -344,12 +344,12 @@ nav.active .nav-links li:hover a{
 }
 .separator{
     height: 1vh;
-    background-color:rgb(119, 50, 50);
+    background-color:rgb(214, 90, 49);
 }
 /** About Div style**/
 
 .about{
-    background-color: rgb(195, 191, 191);
+    background-color: rgb(34, 40, 49);
     height: 100vh;
     width: 100%;
     overflow: scroll;
@@ -369,7 +369,7 @@ nav.active .nav-links li:hover a{
     width: 50%;
     font-size: 2.5vw;
     background-color: transparent;
-    color: rgb(22, 23, 38);
+    color: rgb(238, 238, 238);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 1s anim-aboutText 1;
     animation-delay: 0s;
@@ -399,7 +399,7 @@ nav.active .nav-links li:hover a{
     opacity: 1;
     font-size: 35px;
     background-color: transparent;
-    color: rgb(22, 23, 38);
+    color: rgb(238, 238, 238);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 1s anim-aboutText 1;
 }
@@ -423,7 +423,7 @@ nav.active .nav-links li:hover a{
 .myImg{
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(22, 23, 38);
+    border-color: rgb(238, 238, 238);
     margin-top:5%;
     height: 80%;
     width: 35%;
@@ -450,7 +450,7 @@ nav.active .nav-links li:hover a{
 .myImg.active{
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(22, 23, 38);
+    border-color: rgb(238, 238, 238);
     margin-top:5%;
     height: 80%;
     opacity: 1;
@@ -477,18 +477,18 @@ nav.active .nav-links li:hover a{
     width: 100vh;
     font-size: 7vw;
     padding-left: 15%;
-    color: rgb(119, 50, 50);
+    color: rgb(214, 90, 49);
 }
 .smallSpecialWords{
     font-size: 3vw;
-    color: rgb(119, 50, 50);
+    color: rgb(214, 90, 49);
 }
 .aboutHr{
     border:0;
     height:5px;
     width: 40%;
     margin-left: 24%;
-    background:rgb(22, 23, 38);
+    background:rgb(238, 238, 238);
 }
 @media (max-width:1250px) {
   .aboutTextDiv{
@@ -594,7 +594,7 @@ nav.active .nav-links li:hover a{
 }
 /** Projects Div style**/
 .projects{
-    background-color:rgb(22, 23, 38);
+    background-color:rgb(34, 40, 49);
     height: 150vh;
     width: 100%;
 }
@@ -615,7 +615,7 @@ nav.active .nav-links li:hover a{
     background-color:rgba(95, 97, 121, 0.324);
     border-radius: 3px;
     border-style: solid;
-    border-color: rgb(195, 191, 191);
+    border-color: rgb(34, 40, 49);
 }
 @keyframes anim-p1-out {
     0% {
@@ -698,7 +698,7 @@ nav.active .nav-links li:hover a{
     width: 45vw;
     border-radius: 5px;
     box-sizing: border-box;
-    border-color: rgb(119, 50, 50);
+    border-color: rgb(214, 90, 49);
 }
 .p1ImgBtn, .p2ImgBtn{
     width: 100%;
@@ -710,28 +710,28 @@ nav.active .nav-links li:hover a{
     cursor: pointer;
     height: 25px;
     width: 25px;
-    background-color: rgb(195, 191, 191);
+    background-color: rgb(34, 40, 49);
     border-radius: 50%;
     display: inline-block;  
 }
 .dotActive, .switchDot1:hover{
-    background-color: rgb(119, 50, 50);
+    background-color: rgb(214, 90, 49);
     opacity: 1x;
 }
 
 .projectText{
     margin: 0px;
     font-size: 2.5vw;
-    color: rgb(119, 50, 50);
+    color: rgb(214, 90, 49);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .ProjectSpecialWords{
     font-size: 3.5vw;
-    color: rgb(195, 191, 191);
+    color: rgb(238, 238, 238);
 }
 .ProjectTitles{
   font-size: 5vw;
-  color: rgb(195, 191, 191);
+  color: rgb(238, 238, 238);
 
 }
 .p1Text, .p2Text{    
@@ -745,7 +745,7 @@ nav.active .nav-links li:hover a{
     padding-top: 1%;
     font-size: 7vw;
     text-align: center;
-    color: rgb(195, 191, 191);
+    color: rgb(238, 238, 238);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     animation: 1s anim-project-Title-in 1;
 }
@@ -787,7 +787,7 @@ nav.active .nav-links li:hover a{
 .projectsSeparator{
     margin-left: 31%;
     margin-top: 0px;
-    background-color: rgb(119, 50, 50);
+    background-color: rgb(214, 90, 49);
     border:0;
     height:5px;
     width: 35%;
@@ -798,13 +798,13 @@ nav.active .nav-links li:hover a{
     width: 15%;
 }
 .github_Link{
-    color: rgb(195, 191, 191);
+    color: rgb(214, 90, 49);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 38px;
 }
 .p1Text .fa.fa-brands.fa-github,.p2Text .fa.fa-brands.fa-github {
     font-size: 5vw;
-    color: rgb(195, 191, 191);
+    color: rgb(214, 90, 49);
 }
 
 @media (max-width:1260px) {
@@ -911,7 +911,7 @@ nav.active .nav-links li:hover a{
     height: 90vh;
     width: 100%;
     display: flex;
-    background-color:rgb(195, 191, 191);
+    background-color:rgb(238, 238, 238);
 }
 .contactLeft{
   width: 50%;
@@ -929,18 +929,18 @@ nav.active .nav-links li:hover a{
   font-size: 7vw;
   margin-bottom: 10%;
   margin-top: 0px;
-  color: rgb(22, 23, 38);
+  color: rgb(34, 40, 49);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .contactSeparator{
   margin-top: 25%;
-  background-color: rgb(119, 50, 50);
+  background-color: rgb(214, 90, 49);
   border:0;
   height:5px;
   width: 35%;
 }
 .vertLine{
-  border-left: 6px solid rgb(119, 50, 50);
+  border-left: 6px solid rgb(214, 90, 49);
   height: 500px;
   margin-top: 7%;
 }
@@ -952,10 +952,10 @@ nav.active .nav-links li:hover a{
 }
 .contactSpecialWords{
   font-size: 2.2vw;
-  color: rgb(119, 50, 50);
+  color: rgb(214, 90, 49);
 }
 .contactForm{
-  background-color:rgb(22, 23, 38);
+  background-color:rgb(34, 40, 49);
   width: 60%;  
   border-radius: 5%;
   border-color: white;
@@ -998,7 +998,7 @@ nav.active .nav-links li:hover a{
 .sendBtn{
   height: 5%;
   width: 30%;
-  background-color: rgb(119, 50, 50);
+  background-color: rgb(214, 90, 49);
   border: 0;
   outline: none;
   cursor: pointer;
@@ -1058,7 +1058,7 @@ nav.active .nav-links li:hover a{
     margin-bottom: 5%;
     width: 50%;
     margin-left: 25%;
-    background-color: rgb(119, 50, 50);
+    background-color: rgb(214, 90, 49);
   }
   .inputBox, .inputBoxLarge{
     height: 10%;
