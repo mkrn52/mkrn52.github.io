@@ -594,7 +594,6 @@ nav.active .nav-links li:hover a{
 /** Projects Div style**/
 .projects{
     background-color:rgb(34, 40, 49);
-    height: 200vw;
     width: 100%;
     overflow: scroll;
 }
@@ -602,7 +601,6 @@ nav.active .nav-links li:hover a{
   width: 100%;
   margin-left: 0px;
   display: flex;
-  height: 80vw;
   justify-content: space-evenly;
 }
 .projectR1.active1{
@@ -612,7 +610,6 @@ nav.active .nav-links li:hover a{
 .p1,.p2{
     width: 45%;
     overflow: scroll;
-    height: 58vw;
     position: relative;
     display: inline-block;
     justify-content: space-around;
@@ -817,7 +814,6 @@ nav.active .nav-links li:hover a{
 }
 @media (max-width:800px) {
   .projects{
-    height: 200vw;
   }
   .projectR1{
       display:inline;
@@ -962,6 +958,9 @@ nav.active .nav-links li:hover a{
 .sendBtn:hover{
   background-color: rgb(68, 16, 16);
 }
+.horzLine{
+  display: none;
+}
 @media (max-width:1000px){
   .contactForm{
     width: 80%;
@@ -977,6 +976,7 @@ nav.active .nav-links li:hover a{
 @media (max-width:750px){
   .contactTitle{
     font-size: 13vw;
+    margin-bottom: 0px;
   }
   .contactSpecialWords{
     font-size: 4vw;
@@ -1000,6 +1000,14 @@ nav.active .nav-links li:hover a{
   }
   .infoDiv{
     border: 0px;
+  }
+  .horzLine{
+    border: 0;
+    display: block;
+    width: 25%;
+    height: 6px;
+    margin-bottom: 5%;
+    background:rgb(214, 90, 49);  
   }
   .vertLine{
     height: 1%;
@@ -1027,7 +1035,6 @@ nav.active .nav-links li:hover a{
 /** Height Restrictions for all divs */
 @media (min-height:900px){
   .landing{
-    height: 60vh;
   }
   .about{
     height: 85vh;
@@ -1037,7 +1044,6 @@ nav.active .nav-links li:hover a{
   .smallSpecialWords{
   }
   .p1,.p2{
-    height: 45vh;
   }
   .p1ImgDiv,.p2ImgDiv{
   }
