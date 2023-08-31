@@ -481,7 +481,7 @@ nav.active .nav-links li:hover a{
     font-size: 7vw;
     padding-left: 15%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(214, 90, 49);
+    color: rgb(238, 238, 238);
 }
 .smallSpecialWords{
     font-size: 3rem;
@@ -492,7 +492,7 @@ nav.active .nav-links li:hover a{
     height:5px;
     width: 40%;
     margin-left: 24%;
-    background:rgb(238, 238, 238);
+    background: rgb(214, 90, 49) ;
 }
 @media (max-width:1250px) {
   .aboutTextDiv{
