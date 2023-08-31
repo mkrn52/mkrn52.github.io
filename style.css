@@ -3,6 +3,7 @@ html{
 }
 .parent{
     margin: 0px;
+    background-color:rgb(34, 40, 49);
 }
 /* Nav Style */
 .nav{
@@ -586,6 +587,14 @@ nav.active .nav-links li:hover a{
   .aboutTextDiv{
   }
 }
+.divSeparatorHr{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 70%;
+  height: 1%;
+  border: 0;
+  background-color: rgb(214, 90, 49);
+}
 /** Projects Div style**/
 .projects{
     background-color:rgb(34, 40, 49);
@@ -743,7 +752,6 @@ nav.active .nav-links li:hover a{
 }
 .projectTitle{
     margin: 0px;
-    padding-top: 5%;
     font-size: 7rem;
     text-align: center;
     color: rgb(238, 238, 238);
