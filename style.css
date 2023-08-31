@@ -266,11 +266,10 @@ nav.active .nav-links li:hover a{
       transform: translateY(0%);
     }
   }
-.name.active{
-    animation: 2s anim-name-out 1;
-    animation-delay: 0s;
-    opacity: 0;
-}
+
+  .name.active{
+    opacity: 1;
+  }
 @keyframes anim-name-out {
     0% {
       opacity: 100;
@@ -287,18 +286,18 @@ nav.active .nav-links li:hover a{
     }
   }
 .name.active1{
-    animation: 1s anim-name-jump 1;
+    animation: 1s anim-jump 1;
     animation-delay: 0s;
 }
-@keyframes anim-name-jump {
+@keyframes anim-jump {
     25% {
-        transform: translateY(-3%);
-    }
-    50% {
         transform: translateY(3%);
     }
+    50% {
+        transform: translateY(0%);
+    }
     70% {
-        transform: translateY(-3%);
+        transform: translateY(1.5%);
     }
     100% {
       transform: translateY(0%);
@@ -348,7 +347,6 @@ nav.active .nav-links li:hover a{
     background-color:rgb(214, 90, 49);
 }
 /** About Div style**/
-
 .about{
     background-color: rgb(34, 40, 49);
     height: 100vh;
@@ -358,7 +356,7 @@ nav.active .nav-links li:hover a{
     justify-content: space-around;
 }
 .imageDiv{
-    height: 30vh;
+    height: 10vw;
     width: 30vw;
     background-color: aqua;
 }
@@ -391,12 +389,11 @@ nav.active .nav-links li:hover a{
       transform: translateX(-110%);
     }
 }
-
 .aboutTextDiv.active{
     align-items: center;
     margin-top: 5%;
-    height: 30vh;
-    width: 80vh;
+    height: 30vw;
+    width: 80vw;
     opacity: 1;
     font-size: 35px;
     background-color: transparent;
@@ -421,13 +418,19 @@ nav.active .nav-links li:hover a{
       transform: translateY(0%);
     }
 }
+.aboutTextDiv.active1{
+  animation: 1s anim-jump 1;
+  animation-delay: 0s;
+}
 .myImg{
     border-style: solid;
     border-width: 5px;
     border-color: rgb(238, 238, 238);
-    margin-top:5%;
-    height: 80%;
+    margin-top:3%;
+    margin-bottom: 3%;
+    height: auto;
     width: 35%;
+    box-sizing: border-box;
     border-radius: 10%;
     animation: 1s anim-image 1;
     animation-delay: 0s;
@@ -447,7 +450,10 @@ nav.active .nav-links li:hover a{
       transform: translateX(50%);
     }
 }
-
+.myImg.active1{
+  animation: 1s anim-jump 1;
+  animation-delay: 0s;
+}
 .myImg.active{
     border-style: solid;
     border-width: 5px;
@@ -478,6 +484,7 @@ nav.active .nav-links li:hover a{
     width: 100vh;
     font-size: 7vw;
     padding-left: 15%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(214, 90, 49);
 }
 .smallSpecialWords{
@@ -493,10 +500,10 @@ nav.active .nav-links li:hover a{
 }
 @media (max-width:1250px) {
   .aboutTextDiv{
-    font-size: 3.2vw;
+    font-size: 3vw;
   }
   .smallSpecialWords{
-    font-size: 3.5vw;
+    font-size: 3.3vw;
   }
 
 }
@@ -528,7 +535,6 @@ nav.active .nav-links li:hover a{
     width: 20%;
   }
   .aboutTextDiv{
-    height:50%;
     width: 100%;
     margin: auto;
     margin-top: 3%;
@@ -570,7 +576,6 @@ nav.active .nav-links li:hover a{
   }
   .aboutTextDiv{
     font-size: 4.8vw;
-    height: 50%;
   }
   .myImg{
     width: 50%;
@@ -582,7 +587,6 @@ nav.active .nav-links li:hover a{
   }
   .aboutTextDiv{
     font-size: 6vw;
-    height: 45%;
   }
   .myImg{
     width: 60%;
@@ -590,7 +594,6 @@ nav.active .nav-links li:hover a{
 }
 @media (max-width:380px){
   .aboutTextDiv{
-    height: 48%;
   }
 }
 /** Projects Div style**/
@@ -606,6 +609,10 @@ nav.active .nav-links li:hover a{
   display: flex;
   height: 80vw;
   justify-content: space-evenly;
+}
+.projectR1.active1{
+  animation: 1s anim-jump 1;
+  animation-delay: 0s;
 }
 .p1,.p2{
     width: 45%;

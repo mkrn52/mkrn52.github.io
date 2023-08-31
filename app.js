@@ -2,6 +2,7 @@
 const navbar = document.querySelector('nav');
 const name_var = document.getElementsByClassName('name')[0];
 const about_div = document.getElementsByClassName('aboutTextDiv')[0];
+const landing_div = document.getElementsByClassName('landing')[0];
 const img_div = document.getElementsByClassName('myImg')[0];
 const nav_links = document.getElementsByClassName('nav-links')[0];
 const p1_div = document.getElementsByClassName('p1')[0];
@@ -38,21 +39,30 @@ function slideSwitch(project, n){
     images[currentImage].style.opacity = 1;
     dots[currentImage].className += ' DotActive';
 }
-
-
-var prev_link = 1;
 function linkClicked(n){
     if(n == 1 && window.scrollY == 0){
         name_var.classList.remove('active1');
         setTimeout(function(){
             name_var.classList.add('active1');
-        }, 100);      
-    }else{
-        name_var.classList.remove('active1');
+        }, 10);      
+    }else if(n == 2 && window.scrollY == landing_div.clientHeight){
+        about_div.classList.remove("active1");
+        img_div.classList.remove("active1");
+        setTimeout(function(){
+            about_div.classList.add("active1");
+        }, 10);      
+        setTimeout(function(){
+            img_div.classList.add("active1");
+        }, 10);      
+
+
+
     }
-    prev_link = n;
 }
 
+function sendEmail(){
+
+}
 /** 
 window.onscroll = () => {
     if(window.scrollY > 350 && window.scrollY < 710 ){
@@ -109,9 +119,6 @@ toggle.addEventListener('click',() => {
     navlinks.classList.toggle('active');
 })
 
-function linkClicked(){
-    navlinks.classList.remove('active');
-}
 
 const home = document.getElementsByClassName('homelink')[0];
 const about = document.getElementsByClassName('aboutlink')[0];
@@ -122,17 +129,3 @@ const contact = document.getElementsByClassName('contactlink')[0];
 //about.addEventListener('click', linkClicked);
 //projects.addEventListener('click', linkClicked);
 //contact.addEventListener('click', linkClicked);
-
-const p1modal = document.getElementsByClassName('modal-container')[0];
-const parent = document.getElementsByClassName('parent')[0];
-const p1btnClose = document.getElementsByClassName('closep1')[0];
-const p1btnOpen = document.getElementsByClassName('project1')[0];
-
-p1btnClose.addEventListener('click',() => {
-    p1modal.classList.remove('open');
-    parent.classList.remove('open');
-})
-p1btnOpen.addEventListener('click',() => {
-    p1modal.classList.add('open');
-    parent.classList.add('open');
-})
