@@ -44,7 +44,7 @@ function linkClicked(n){
         name_var.classList.remove('active1');
         setTimeout(function(){
             name_var.classList.add('active1');
-        }, 10);      
+        }, 1);      
     }else if(n == 2 && window.scrollY == landing_div.clientHeight){
         about_div.classList.remove("active1");
         img_div.classList.remove("active1");
