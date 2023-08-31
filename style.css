@@ -362,7 +362,7 @@ nav.active .nav-links li:hover a{
     z-index: 1;
     overflow: scroll;
     width: 50%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background-color: transparent;
     color: rgb(238, 238, 238);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -422,9 +422,9 @@ nav.active .nav-links li:hover a{
     border-style: solid;
     border-width: 5px;
     border-color: rgb(238, 238, 238);
-    margin-top:3%;
+    margin-top:8%;
     margin-bottom: 3%;
-    height: auto;
+    height:auto;
     width: 35%;
     box-sizing: border-box;
     border-radius: 10%;
@@ -535,20 +535,18 @@ nav.active .nav-links li:hover a{
     margin-top: 3%;
     margin-bottom: 5%;
     text-align: center;
-    max-height: 50%;
   }
   .about{
     display:inline-block;
     text-align: center;
     justify-content: space-around;
-    height: 120vh;
-}
-.myImg{
-  height: 35%;
-  width: 50%;
-  margin: 0px;
-  src: "images/side_me_resized.jpeg";
-}
+  }
+  .myImg{
+    height: auto;
+    width: 50%;
+    margin-bottom: 5%;
+    src: "images/side_me_resized.jpeg";
+  }
 }
 @media (max-width:710px) {
   .smallSpecialWords{
@@ -559,10 +557,8 @@ nav.active .nav-links li:hover a{
     margin-bottom: 0px;
   }
   .myImg{
-    height: 45%;
+    height: auto;
     width: 50%;
-    margin: 0px;
-    src: "images/side_me_resized.jpeg";
   }
 }
 @media (max-width:575px) {
@@ -572,9 +568,7 @@ nav.active .nav-links li:hover a{
   .aboutTextDiv{
     font-size: 4.8vw;
   }
-  .myImg{
-    width: 50%;
-  }
+
 }
 @media (max-width:425px) {
   .smallSpecialWords{
@@ -585,6 +579,7 @@ nav.active .nav-links li:hover a{
   }
   .myImg{
     width: 60%;
+    margin-top: 7%;
   }
 }
 @media (max-width:380px){
@@ -1037,7 +1032,6 @@ nav.active .nav-links li:hover a{
   .landing{
   }
   .about{
-    height: 85vh;
   }
   .aboutTextDiv{
   }
