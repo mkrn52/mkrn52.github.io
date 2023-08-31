@@ -102,18 +102,29 @@ nav.active .nav-links li:hover a{
 .toggle{
     position: absolute;
     margin-left: 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
     z-index: 100;
     top: 1.5rem;
     display: none;
     flex-direction: column;
-    justify-content: space-between;
-    width: 40px;
-    height: 35px;
-    color: beige;
+    justify-content: space-around;
+    align-items: center;
+    width: 50px;
+    height: 60px;
+    color: black;
+    background-color: rgb(220, 206, 206);
+}
+.toggle.active .bar{
+  background-color: white;
+}
+.toggle.active{
+  background-color: rgb(68, 89, 118);
+  color: white;
 }
 .toggle .bar{
     height: 6px;
-    width: 100%;
+    width: 70%;
     background-color: black;
     border-radius: 10px;
 }

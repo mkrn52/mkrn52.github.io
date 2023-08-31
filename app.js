@@ -1,9 +1,12 @@
 //Functions for project images
 const navbar = document.querySelector('nav');
 const name_var = document.getElementsByClassName('name')[0];
+const toggle = document.getElementsByClassName('toggle')[0];
+const navlinks = document.getElementsByClassName('nav-links')[0];
 const about_div = document.getElementsByClassName('aboutTextDiv')[0];
 const landing_div = document.getElementsByClassName('landing')[0];
 const img_div = document.getElementsByClassName('myImg')[0];
+const project_div = document.getElementsByClassName('projects')[0];
 const nav_links = document.getElementsByClassName('nav-links')[0];
 const p1_div = document.getElementsByClassName('p1')[0];
 const p2_div = document.getElementsByClassName('p2')[0];
@@ -59,9 +62,15 @@ function linkClicked(n){
 
     }
 }
-
-function sendEmail(){
-
+window.onscroll = () => {
+    if(window.scrollY > landing_div.clientHeight - 20){
+        toggle.classList.add('active');
+        if(window.screenY > (landing_div.clientHeight + about_div.clientHeight + project_div.clientHeight)){
+            toggle.classList.remove('active');
+        }
+    }else{
+        toggle.classList.remove('active');
+    }
 }
 /** 
 window.onscroll = () => {
@@ -112,11 +121,12 @@ window.onscroll = () => {
 };
 */
 
-const toggle = document.getElementsByClassName('toggle')[0];
-const navlinks = document.getElementsByClassName('nav-links')[0];
 
 toggle.addEventListener('click',() => {
     navlinks.classList.toggle('active');
+    if(!toggle.classList.contains("active")){
+        toggle.classList.toggle('active');
+    }
 })
 
 
