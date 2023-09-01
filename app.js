@@ -3,6 +3,7 @@ const navbar = document.querySelector('nav');
 const name_var = document.getElementsByClassName('name')[0];
 const toggle = document.getElementsByClassName('toggle')[0];
 const navlinks = document.getElementsByClassName('nav-links')[0];
+const separatorLine = document.getElementsByClassName('divSeparatorHr')[0];
 const about_div = document.getElementsByClassName('aboutTextDiv')[0];
 const landing_div = document.getElementsByClassName('landing')[0];
 const img_div = document.getElementsByClassName('myImg')[0];
@@ -43,6 +44,7 @@ function slideSwitch(project, n){
     dots[currentImage].className += ' DotActive';
 }
 function linkClicked(n){
+    console.log(window.pageYOffset + separatorLine.getBoundingClientRect().top)
     if(n == 1 && window.scrollY == 0){
         name_var.classList.remove('active1');
         setTimeout(function(){
@@ -57,20 +59,22 @@ function linkClicked(n){
         setTimeout(function(){
             img_div.classList.add("active1");
         }, 10);      
-
-
-
+    }else if(n==3 && window.scrollY > (window.pageYOffset + separatorLine.getBoundingClientRect().top - 10) &&  window.scrollY < (window.pageYOffset + separatorLine.getBoundingClientRect().top )){
+        console.log("works")
+        console.log("works")
+        project_div.classList.remove("active1");
+        setTimeout(function(){
+            project_div.classList.add("active1");
+        }, 10);      
     }
 }
 window.onscroll = () => {
     if(window.scrollY > landing_div.clientHeight / 1.75){
-        console.log("reacjed");
         name_var.classList.add('active');
     }else{
         name_var.classList.remove('active');
     }
     if(window.scrollY > landing_div.clientHeight - 20){
-        console.log("reachhhhhh");
         toggle.classList.add('active');
         if(window.screenY > (landing_div.clientHeight + about_div.clientHeight + project_div.clientHeight)){
             toggle.classList.remove('active');

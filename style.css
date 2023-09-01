@@ -65,7 +65,7 @@ html{
     animation: 2s anim-nav-in 1;
 }
 .nav-links a{
-    color: rgb(238, 238, 238);
+    color: white;
     opacity: 50%;
     text-decoration: none;
     background-color: transparent;
@@ -613,6 +613,10 @@ nav.active .nav-links li:hover a{
     width: 100%;
     overflow: scroll;
 }
+.projects.active1{
+  animation: 1s anim-jump 1;
+  animation-delay: 0s;
+}
 .projectR1{
   width: 100%;
   margin-left: 0px;
@@ -883,6 +887,24 @@ nav.active .nav-links li:hover a{
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 2s contact-left-in 1;
+}
+@keyframes contact-left-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.35;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .infoDiv{
   width: 100%;
@@ -927,6 +949,24 @@ nav.active .nav-links li:hover a{
   border-color: white;
   border-width: 5px;
   border-style: solid;
+  animation: 2s contact-right-in 1;
+}
+@keyframes contact-right-in {
+  0% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.35;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .formTitle{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
