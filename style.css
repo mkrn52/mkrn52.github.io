@@ -282,7 +282,8 @@ nav.active .nav-links li:hover a{
   }
 
   .name.active{
-    opacity: 1;
+    animation: 2s anim-name-out 1;
+    opacity: 0;
   }
 @keyframes anim-name-out {
     0% {

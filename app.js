@@ -63,7 +63,14 @@ function linkClicked(n){
     }
 }
 window.onscroll = () => {
+    if(window.scrollY > landing_div.clientHeight / 1.75){
+        console.log("reacjed");
+        name_var.classList.add('active');
+    }else{
+        name_var.classList.remove('active');
+    }
     if(window.scrollY > landing_div.clientHeight - 20){
+        console.log("reachhhhhh");
         toggle.classList.add('active');
         if(window.screenY > (landing_div.clientHeight + about_div.clientHeight + project_div.clientHeight)){
             toggle.classList.remove('active');
