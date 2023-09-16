@@ -726,6 +726,12 @@ nav.active .nav-links li:hover a{
     box-sizing: border-box;
     border-color: rgb(214, 90, 49);
 }
+.p1ImgDotActive{
+  opacity: 1;
+}
+.p1ImgNotActice{
+  opacity: 0;
+}
 .p1ImgBtn, .p2ImgBtn{
     width: 100%;
     position: relative;
