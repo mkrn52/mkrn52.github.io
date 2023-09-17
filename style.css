@@ -627,7 +627,7 @@ nav.active .nav-links li:hover a{
   animation: 1s anim-jump 1;
   animation-delay: 0s;
 }
-.p1,.p2{
+.p1,.p2,.p3,.p4{
     width: 45%;
     overflow: scroll;
     position: relative;
@@ -663,6 +663,15 @@ nav.active .nav-links li:hover a{
     animation: 1s anim-p1-in-right 1;
     opacity: 1;
 }
+.p3.active{
+  animation: 1s anim-p1-in-right 1;
+  opacity: 1;
+}
+.p4.active{
+  animation: 1s anim-p1-in-right 1;
+  opacity: 1;
+}
+
 @keyframes anim-p1-in-right {
     0% {
       opacity: 0;
@@ -716,7 +725,7 @@ nav.active .nav-links li:hover a{
     width: 100%;
     position: relative;
 }
-.p1 img, .p2 img{
+.p1 img, .p2 img, .p3 img, .p4 img{
     border-style: solid;
     position:absolute;
     height: auto;
@@ -738,7 +747,7 @@ nav.active .nav-links li:hover a{
     bottom: 0px;
     text-align: center;
 }
-.switchDot1, .switchDot2{
+.switchDot1, .switchDot2, .switchDot3, .switchDot4{
     cursor: pointer;
     height: 25px;
     width: 25px;
@@ -746,7 +755,7 @@ nav.active .nav-links li:hover a{
     border-radius: 50%;
     display: inline-block;  
 }
-.dotActive, .switchDot1:hover{
+.dotActive, .switchDot1:hover, .switchDot2:hover, .switchDot3:hover, .switchDot4:hover{
     background-color: rgb(214, 90, 49);
     opacity: 1x;
 }
@@ -850,7 +859,7 @@ nav.active .nav-links li:hover a{
   .projectTitle{
     font-size: 15vw;
   }
-  .p1,.p2{
+  .p1,.p2,.p3,.p4{
       margin-left: 10%;
       width: 80%;
       height: 79vw;
@@ -859,7 +868,7 @@ nav.active .nav-links li:hover a{
   .p1ImgBtn{
     padding-top: 0%;
   }
-  .p1 img, .p2 img{
+  .p1 img, .p2 img, .p3 img, .p4 img{
     width: 90%;
     height: auto;
     margin-left: 5%;
