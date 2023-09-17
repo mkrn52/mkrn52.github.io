@@ -27,7 +27,6 @@ var currentImage = 0;
 dots = 0;
 
 const interval = 5000;
-//var timer = setInterval(slideSwitch, interval);
 function slideSwitch(project, n){
     if(project == 1){
         images = p1images;
@@ -47,8 +46,6 @@ function slideSwitch(project, n){
         console.log(index)
         dots[index].className = dots[index].className.replace(' DotActive', '');        
     }
-    //currentImage = (currentImage + 1) % images.length; // update the index number
-
     currentImage = n;
 
     images[currentImage].style.opacity = 1;
@@ -97,55 +94,6 @@ window.onscroll = () => {
         toggle.classList.remove('active');
     }
 }
-/** 
-window.onscroll = () => {
-    if(window.scrollY > 350 && window.scrollY < 710 ){
-        if(window.scrollY > 450){
-            name_var.classList.remove('active1');
-            setTimeout(function(){
-                name_var.classList.add('active');
-            }, 50);  
-    
-        }
-        img_div.classList.add('active');
-        about_div.classList.add('active');    
-        //nav_links.classList.remove("active");
-    }else{
-        if(window.scrollY < 350){
-            name_var.classList.remove('active');
-            if(window.scrollY < 250){
-                about_div.classList.remove('active');   
-                img_div.classList.remove('active');
-            }
-            //nav_links.classList.remove("active"); 
-        }
-        if(window.scrollY > 710){
-            //nav_links.classList.add("active");
-            if(window.scrollY > 1180){
-                img_div.classList.remove('active');
-                about_div.classList.remove('active');  
-                p1_div.classList.add("active");
-                p2_div.classList.add("active");
-
-                project_title.classList.add("active");
-                if(window.scrollY > 1470){
-                    //nav_links.classList.remove("active");
-                    if(window.scrollY > 2590){ // change after all projects added
-                        //nav_links.classList.add("active");
-                    }
-                }     
-            }else{
-                p1_div.classList.remove("active");
-                p2_div.classList.remove("active");
-                img_div.classList.add('active');
-                about_div.classList.add('active');  
-                project_title.classList.remove("active");          
-            }
-      }
-    }
-};
-*/
-
 
 
 toggle.addEventListener('click',() => {
@@ -160,8 +108,3 @@ const home = document.getElementsByClassName('homelink')[0];
 const about = document.getElementsByClassName('aboutlink')[0];
 const projects = document.getElementsByClassName('projectslink')[0];
 const contact = document.getElementsByClassName('contactlink')[0];
-
-//home.addEventListener('click', linkClicked);
-//about.addEventListener('click', linkClicked);
-//projects.addEventListener('click', linkClicked);
-//contact.addEventListener('click', linkClicked);

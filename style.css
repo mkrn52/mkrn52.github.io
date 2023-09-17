@@ -165,17 +165,6 @@ nav.active .nav-links li:hover a{
   }
 }
 
-@media (max-width:1170px) {
-    .nav{
-            /*margin-left: 26%;*/
-        }
-}
-@media (max-width:1070px) {
-    .nav{
-            /*margin-left: 24%;*/
-        }
-}
-
 
 @media (max-width:950px) {
     .toggle{
@@ -244,7 +233,6 @@ nav.active .nav-links li:hover a{
     align-items: center;  
     text-align: center;
     background-color: rgb(238, 238, 238);
-    /**background-image: radial-gradient(black 10%, gray, black 97%);*/
 }
 
 .fa.fa-brands.fa-github, .fa.fa-brands.fa-linkedin{
@@ -847,8 +835,6 @@ nav.active .nav-links li:hover a{
     color: rgb(214, 90, 49);
 }
 @media (max-width:800px) {
-  .projects{
-  }
   .projectR1{
       display:inline;
   }
@@ -1104,18 +1090,6 @@ nav.active .nav-links li:hover a{
 
 /** Height Restrictions for all divs */
 @media (min-height:900px){
-  .landing{
-  }
-  .about{
-  }
-  .aboutTextDiv{
-  }
-  .smallSpecialWords{
-  }
-  .p1,.p2{
-  }
-  .p1ImgDiv,.p2ImgDiv{
-  }
   .projectTitle{
     font-size: 12vw;
   }
