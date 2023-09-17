@@ -15,8 +15,13 @@ const project_title = document.getElementsByClassName('projectTitle')[0];
 
 var p1images =  document.querySelectorAll('.p1 img');
 var p2images =  document.querySelectorAll('.p2 img');
+var p3images =  document.querySelectorAll('.p3 img');
+var p4images =  document.querySelectorAll('.p4 img');
+
 var dotsp1 = document.querySelectorAll('.switchDot1');
 var dotsp2 = document.querySelectorAll('.switchDot2');
+var dotsp3 = document.querySelectorAll('.switchDot3');
+var dotsp4 = document.querySelectorAll('.switchDot4');
 
 var currentImage = 0;
 dots = 0;
@@ -30,6 +35,12 @@ function slideSwitch(project, n){
     }else if(project == 2){
         images = p2images;
         dots = dotsp2;
+    }else if(project == 3){
+        images = p3images;
+        dots = dotsp3;
+    }else if(project == 4){
+        images = p4images;
+        dots = dotsp4;
     }
     for (let index = 0; index < images.length; index++) {
         images[index].style.opacity = 0;
@@ -44,6 +55,9 @@ function slideSwitch(project, n){
     dots[currentImage].className += ' DotActive';
 }
 function linkClicked(n){
+    if(toggle.classList.contains("active")){
+        navlinks.classList.remove('active');
+    }
     console.log(window.pageYOffset + separatorLine.getBoundingClientRect().top)
     if(n == 1 && window.scrollY == 0){
         name_var.classList.remove('active1');
@@ -131,6 +145,7 @@ window.onscroll = () => {
     }
 };
 */
+
 
 
 toggle.addEventListener('click',() => {
