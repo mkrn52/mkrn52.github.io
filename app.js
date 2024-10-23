@@ -130,7 +130,9 @@ window.onscroll = () => {
 // Open nav section when toggle clicked
 toggle.addEventListener('click',() => {
     navlinks.classList.toggle('active');
-    if(!toggle.classList.contains("active")){
-        toggle.classList.toggle('active');
-    }
 })
+
+// Collapse menu when link clicked with toggle
+function linkClicked(n){
+    navlinks.classList.remove('active');
+}
