@@ -360,12 +360,12 @@ nav.active .nav-links li:hover a{
 @media (max-height:1000px) {
   @media (max-width:550px) {
     .landing{
-      height: 80vh;
+      height: 98%;
     }  
   }
     @media (max-width:450px) {
       .landing{
-        height: 60vh;
+        height: 98%;
       }    
       .name{
         padding-top: 15%;
